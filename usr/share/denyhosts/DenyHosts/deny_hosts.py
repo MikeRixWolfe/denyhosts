@@ -343,11 +343,12 @@ allowed based on your %s file"""  % (self.__prefs.get("HOSTS_DENY"),
     
 
     def is_valid(self, rx_match):
-        invalid = 0
+        #invalid = 0
         try:
             if rx_match.group("invalid"): invalid = 1
         except:
-            invalid = 1
+            #invalid = 1
+            invalid = 0
         return invalid
     
     def process_log(self, logfile, offset):

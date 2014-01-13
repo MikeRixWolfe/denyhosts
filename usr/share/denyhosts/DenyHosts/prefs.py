@@ -136,7 +136,8 @@ class Prefs(dict):
                     value = self.environ_sub(m.group('value'))
                     
                     #print name, value
-                    if not value: value = None
+                    #if not value: value = None
+                    if not len(value.strip()): value = None
                     if name in self.to_int:
                         value = int(value)
                     if name in self.to_seconds and value:
@@ -181,7 +182,8 @@ class Prefs(dict):
                     self.__data['DENY_THRESHOLD_RESTRICTED'] = self.__data['DENY_THRESHOLD_ROOT']
                 else:
                     ok = 0
-            elif val_reqd and not self.__data[name_reqd]:
+            #elif val_reqd and not self.__data[name_reqd]:
+            elif val_reqd and not self.__data[name_reqd] and not name_reqd in self.to_int:
                 print "Missing configuration value for: %s" % name_reqd
                 ok = 0
 

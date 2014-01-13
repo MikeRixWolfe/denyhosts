@@ -31,7 +31,7 @@ DAEMONCTL=/usr/share/denyhosts/denyhosts_ctl.py
 PIDFILE=/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 CONFIG=/etc/denyhosts.conf
-FLAGS="--purge --config=$CONFIG"
+FLAGS="--verbose --debug --config=$CONFIG"
 
 # Function that starts the daemon/service.
 d_start() {
