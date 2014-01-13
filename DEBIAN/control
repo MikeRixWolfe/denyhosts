@@ -1,0 +1,23 @@
+Package: denyhosts
+Version: 2.6-10
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kyle Willmon <kylewillmon@gmail.com>
+Installed-Size: 310
+Depends: lsb-base (>= 3.1-13), python (>= 2.7.1-0ubuntu2)
+Section: net
+Priority: optional
+Homepage: http://denyhosts.sourceforge.net/
+Description: Utility to help sys admins thwart SSH crackers
+ DenyHosts is a program that automatically blocks SSH
+ brute-force attacks by adding entries to /etc/hosts.deny.
+ It will also inform Linux administrators about offending
+ hosts, attacked users and suspicious logins.
+ .
+ Synchronization with a central server is possible too.
+ .
+ Differently from other software that do same work, denyhosts
+ doesn't need support for packet filtering or any other kind
+ of firewall in your kernel.
+ .
+ DenyHosts unfortunately does not support IPv6.

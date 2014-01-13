@@ -1,0 +1,1895 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="denyhosts.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<title>
+DenyHosts Frequently Asked Questions
+</title>
+</head>
+<body bgcolor=white>
+<center>
+&nbsp;&nbsp;&nbsp;<img src=/images/denyhosts.png alt="DenyHosts">
+</center>
+
+<table width=100% border=0>
+<tr>
+<td width="15%" valign=top>
+<P>&nbsp;
+<script src="xaramenu.js"></script>
+<script menumaker src="images/denyhosts.js"></script>
+<p>
+<fieldset>
+<font size=-3>
+<a href="index.html">Home</a> | 
+<a href="faq.html">FAQ</a> |
+<a href="http://stats.denyhosts.net/stats.html">Statistics</a> |
+<a href="links.html">Links</a> |
+<a href="features.html">Features</a> |
+<a href="http://sourceforge.net/project/showfiles.php?group_id=131204">Download</a> |
+<a href="http://sourceforge.net/projects/denyhosts/">SourceForge</a>
+</font>
+</fieldset>
+
+<p>&nbsp;
+
+</td>
+<td width="85%">
+<!-- This page was generated automatically with FAQtor.py -->
+
+<a name="#top"></a>
+<center><h1>DenyHosts - Frequently Asked Questions</h1></center><table border=0><tr><td>
+<table border="0">
+<tr><th colspan="2" align="left">&nbsp;<br>General</th></tr>
+<tr><td>Q.&nbsp;1.0&nbsp;</td><td valign="top"><a href="#1_0">What is DenyHosts?</a></td></tr>
+<tr><td>Q.&nbsp;1.1&nbsp;</td><td valign="top"><a href="#1_1">Who should use DenyHosts?</a></td></tr>
+<tr><td>Q.&nbsp;1.2&nbsp;</td><td valign="top"><a href="#1_2">Who wrote DenyHosts?</a></td></tr>
+<tr><td>Q.&nbsp;1.3&nbsp;</td><td valign="top"><a href="#1_3">What steps can I take to make sshd more secure?</a></td></tr>
+<tr><td>Q.&nbsp;1.4&nbsp;</td><td valign="top"><a href="#1_4">What was the motivation behind DenyHosts?</a></td></tr>
+<tr><td>Q.&nbsp;1.5&nbsp;</td><td valign="top"><a href="#1_5">How does DenyHosts work?</a></td></tr>
+<tr><td>Q.&nbsp;1.6&nbsp;</td><td valign="top"><a href="#1_6">What else does DenyHosts do?</a></td></tr>
+<tr><td>Q.&nbsp;1.7&nbsp;</td><td valign="top"><a href="#1_7">What are the requirements for running DenyHosts?</a></td></tr>
+<tr><td>Q.&nbsp;1.8&nbsp;</td><td valign="top"><a href="#1_8">I just installed DenyHosts and receive a SyntaxError: invalid syntax. What happened?</a></td></tr>
+<tr><td>Q.&nbsp;1.9&nbsp;</td><td valign="top"><a href="#1_9">My server has an earlier version of Python installed, can I still run DenyHosts?</a></td></tr>
+<tr><td>Q.&nbsp;1.10&nbsp;</td><td valign="top"><a href="#1_10">Will DenyHosts work with my sshd configuration?</a></td></tr>
+<tr><td>Q.&nbsp;1.11&nbsp;</td><td valign="top"><a href="#1_11">This FAQ is cool... I want one!  How did you create it?</a></td></tr>
+<tr><td>Q.&nbsp;1.12&nbsp;</td><td valign="top"><a href="#1_12">The DenyHosts logo is cool, who designed it?</a></td></tr>
+<tr><td>Q.&nbsp;1.13&nbsp;</td><td valign="top"><a href="#1_13">Where can I download DenyHosts from?</a></td></tr>
+<tr><td>Q.&nbsp;1.14&nbsp;</td><td valign="top"><a href="#1_14">Is DenyHosts available as a Redhat or Fedora Core package?</a></td></tr>
+<tr><td>Q.&nbsp;1.15&nbsp;</td><td valign="top"><a href="#1_15">Is DenyHosts available as a Debian package?</a></td></tr>
+<tr><td>Q.&nbsp;1.16&nbsp;</td><td valign="top"><a href="#1_16">Is DenyHosts available for Mac OS/X?</a></td></tr>
+<tr><td>Q.&nbsp;1.17&nbsp;</td><td valign="top"><a href="#1_17">Is DenyHosts available for Gentoo?</a></td></tr>
+<tr><td>Q.&nbsp;1.18&nbsp;</td><td valign="top"><a href="#1_18">DenyHosts is cool, can I make a generous donation?</a></td></tr>
+<tr><td>Q.&nbsp;1.19&nbsp;</td><td valign="top"><a href="#1_19">Are there other tools similar to DenyHosts?</a></td></tr>
+<tr><th colspan="2" align="left">&nbsp;<br>Configuring DenyHosts</th></tr>
+<tr><td>Q.&nbsp;2.0&nbsp;</td><td valign="top"><a href="#2_0">How do I configure DenyHosts?</a></td></tr>
+<tr><td>Q.&nbsp;2.1&nbsp;</td><td valign="top"><a href="#2_1">How do I configure cron for DenyHosts use?</a></td></tr>
+<tr><td>Q.&nbsp;2.2&nbsp;</td><td valign="top"><a href="#2_2">How can I disable hostname lookups?</a></td></tr>
+<tr><td>Q.&nbsp;2.3&nbsp;</td><td valign="top"><a href="#2_3">Will DenyHosts work with metalog?</a></td></tr>
+<tr><td>Q.&nbsp;2.4&nbsp;</td><td valign="top"><a href="#2_4">Will DenyHosts work with FreeBSD?</a></td></tr>
+<tr><td>Q.&nbsp;2.5&nbsp;</td><td valign="top"><a href="#2_5">Will DenyHosts works with Solaris?</a></td></tr>
+<tr><td>Q.&nbsp;2.6&nbsp;</td><td valign="top"><a href="#2_6">Can I use a non-standard hosts.deny file?</a></td></tr>
+<tr><td>Q.&nbsp;2.7&nbsp;</td><td valign="top"><a href="#2_7">Can I use DenyHosts on FreeBSD using a non-standard hosts.deny file?</a></td></tr>
+<tr><td>Q.&nbsp;2.8&nbsp;</td><td valign="top"><a href="#2_8">Can DenyHosts purge old entries added to the HOSTS_DENY file?</a></td></tr>
+<tr><td>Q.&nbsp;2.9&nbsp;</td><td valign="top"><a href="#2_9">What time values are appropriate for PURGE_DENY, DAEMON_SLEEP, DAEMON_PURGE?</a></td></tr>
+<tr><td>Q.&nbsp;2.10&nbsp;</td><td valign="top"><a href="#2_10">I just upgraded to 1.0.0, what do I need to do?</a></td></tr>
+<tr><td>Q.&nbsp;2.11&nbsp;</td><td valign="top"><a href="#2_11">I just upgraded to 0.9.9 (or later) what do I need to do?</a></td></tr>
+<tr><td>Q.&nbsp;2.12&nbsp;</td><td valign="top"><a href="#2_12">DenyHosts is unable to parse my syslog (or other) log file</a></td></tr>
+<tr><td>Q.&nbsp;2.13&nbsp;</td><td valign="top"><a href="#2_13">Can I supply additional regular expressions to DenyHosts?</a></td></tr>
+<tr><td>Q.&nbsp;2.14&nbsp;</td><td valign="top"><a href="#2_14">What is the difference between <i>FAILED_ENTRY_REGEX</i> and 
+<i>USERDEF_FAILED_ENTRY_REGEX</i>?
+</a></td></tr>
+<tr><td>Q.&nbsp;2.15&nbsp;</td><td valign="top"><a href="#2_15">Can I use DenyHosts with djb multilog?</a></td></tr>
+<tr><td>Q.&nbsp;2.16&nbsp;</td><td valign="top"><a href="#2_16">Why isn't DenyHosts recognizing successful ssh logins?</a></td></tr>
+<tr><td>Q.&nbsp;2.17&nbsp;</td><td valign="top"><a href="#2_17">What is the difference between DENY_THRESHOLD_INVALID, DENY_THRESHOLD_ROOT
+and DENY_THRESHOLD_VALID and DENY_THRESHOLD_RESTRICTED?</a></td></tr>
+<tr><td>Q.&nbsp;2.18&nbsp;</td><td valign="top"><a href="#2_18">Can I specify a set of users that should never be able to login?</a></td></tr>
+<tr><td>Q.&nbsp;2.19&nbsp;</td><td valign="top"><a href="#2_19">Can I specify an alternate timestamp format for the DAEMON_LOG file?</a></td></tr>
+<tr><td>Q.&nbsp;2.20&nbsp;</td><td valign="top"><a href="#2_20">Can failed login attempts be reset over a period of time?</a></td></tr>
+<tr><td>Q.&nbsp;2.21&nbsp;</td><td valign="top"><a href="#2_21">Can failed login attempts be reset automatically?</a></td></tr>
+<tr><td>Q.&nbsp;2.22&nbsp;</td><td valign="top"><a href="#2_22">Does DenyHosts support plugins?</a></td></tr>
+<tr><td>Q.&nbsp;2.23&nbsp;</td><td valign="top"><a href="#2_23">Can TCPWRAPPERS automatically invoke DenyHosts per login attempt?</a></td></tr>
+<tr><td>Q.&nbsp;2.24&nbsp;</td><td valign="top"><a href="#2_24">Can I dynamically specify configuration values?</a></td></tr>
+<tr><th colspan="2" align="left">&nbsp;<br>Using DenyHosts</th></tr>
+<tr><td>Q.&nbsp;3.0&nbsp;</td><td valign="top"><a href="#3_0">I've configured DenyHosts, now what?</a></td></tr>
+<tr><td>Q.&nbsp;3.1&nbsp;</td><td valign="top"><a href="#3_1">Do I need to run DenyHosts as root?</a></td></tr>
+<tr><td>Q.&nbsp;3.2&nbsp;</td><td valign="top"><a href="#3_2">How should DenyHosts be run?</a></td></tr>
+<tr><td>Q.&nbsp;3.3&nbsp;</td><td valign="top"><a href="#3_3">When my logs are rotated will DenyHosts work properly?</a></td></tr>
+<tr><td>Q.&nbsp;3.4&nbsp;</td><td valign="top"><a href="#3_4">I want to process the entire log file regardless of the last offset, how can I do this?</a></td></tr>
+<tr><td>Q.&nbsp;3.5&nbsp;</td><td valign="top"><a href="#3_5">DenyHosts exits without producing any output, what happened?</a></td></tr>
+<tr><td>Q.&nbsp;3.6&nbsp;</td><td valign="top"><a href="#3_6">I don't want to receive an email report of hosts added to /etc/hosts.deny.</a></td></tr>
+<tr><td>Q.&nbsp;3.7&nbsp;</td><td valign="top"><a href="#3_7">How can I prevent a legitimate IP address from being blocked by DenyHosts?</a></td></tr>
+<tr><td>Q.&nbsp;3.8&nbsp;</td><td valign="top"><a href="#3_8">What if SSH sometimes logs hostnames rather than IP addresses<br>
+How can I prevent these from being blocked?</a></td></tr>
+<tr><td>Q.&nbsp;3.9&nbsp;</td><td valign="top"><a href="#3_9">DenyHosts reports suspicious login activity for allowed hosts, how can I stop this?
+</a></td></tr>
+<tr><td>Q.&nbsp;3.10&nbsp;</td><td valign="top"><a href="#3_10">Can DenyHosts process gzipped logfiles</a></td></tr>
+<tr><td>Q.&nbsp;3.11&nbsp;</td><td valign="top"><a href="#3_11">Can DenyHosts process bzipped (bz2) logfiles</a></td></tr>
+<tr><td>Q.&nbsp;3.12&nbsp;</td><td valign="top"><a href="#3_12">I've just upgraded to 0.8.0 (or greater) and want to update 
+my <i>HOSTS_DENY</i> for use with <i>PURGE_DENY</i>
+</a></td></tr>
+<tr><td>Q.&nbsp;3.13&nbsp;</td><td valign="top"><a href="#3_13">How can I prevent more than one instance of DenyHosts from running?</a></td></tr>
+<tr><td>Q.&nbsp;3.14&nbsp;</td><td valign="top"><a href="#3_14">Why does DenyHosts report  "Error sending email"?</a></td></tr>
+<tr><td>Q.&nbsp;3.15&nbsp;</td><td valign="top"><a href="#3_15">Can DenyHosts email reports to SMTP servers that require 
+authentication?</a></td></tr>
+<tr><td>Q.&nbsp;3.16&nbsp;</td><td valign="top"><a href="#3_16">Can DenyHosts be run as a daemon (background) process?</a></td></tr>
+<tr><td>Q.&nbsp;3.17&nbsp;</td><td valign="top"><a href="#3_17">I have additional questions, where can I get help?</a></td></tr>
+<tr><td>Q.&nbsp;3.18&nbsp;</td><td valign="top"><a href="#3_18">I've found a bug, will you fix it?</a></td></tr>
+<tr><td>Q.&nbsp;3.19&nbsp;</td><td valign="top"><a href="#3_19">What are all of the files in my DenyHosts WORK_DIR?</a></td></tr>
+<tr><th colspan="2" align="left">&nbsp;<br>DenyHosts Synchronization Mode</th></tr>
+<tr><td>Q.&nbsp;4.0&nbsp;</td><td valign="top"><a href="#4_0">What is synchronization mode?</a></td></tr>
+<tr><td>Q.&nbsp;4.1&nbsp;</td><td valign="top"><a href="#4_1">What is denyhosts.net?</a></td></tr>
+<tr><td>Q.&nbsp;4.2&nbsp;</td><td valign="top"><a href="#4_2">How does synchronization mode work?</a></td></tr>
+<tr><td>Q.&nbsp;4.3&nbsp;</td><td valign="top"><a href="#4_3">What are the requirements for synchronization mode?</a></td></tr>
+<tr><td>Q.&nbsp;4.4&nbsp;</td><td valign="top"><a href="#4_4">Is synchronization mode enabled by default?</a></td></tr>
+<tr><td>Q.&nbsp;4.5&nbsp;</td><td valign="top"><a href="#4_5">How do I enable synchronization mode?</a></td></tr>
+<tr><td>Q.&nbsp;4.6&nbsp;</td><td valign="top"><a href="#4_6">How do I configure synchronization mode?</a></td></tr>
+<tr><td>Q.&nbsp;4.7&nbsp;</td><td valign="top"><a href="#4_7">Can I just send denied data?</a></td></tr>
+<tr><td>Q.&nbsp;4.8&nbsp;</td><td valign="top"><a href="#4_8">Can I just receive data?</a></td></tr>
+<tr><td>Q.&nbsp;4.9&nbsp;</td><td valign="top"><a href="#4_9">When receiving denied data will I get all denied hosts?</a></td></tr>
+<tr><td>Q.&nbsp;4.10&nbsp;</td><td valign="top"><a href="#4_10">How do I know that DenyHosts synchronization mode is working?</a></td></tr>
+<tr><td>Q.&nbsp;4.11&nbsp;</td><td valign="top"><a href="#4_11">I decided that I don't want to use synchronization mode, how do I disable it?</a></td></tr>
+<tr><td>Q.&nbsp;4.12&nbsp;</td><td valign="top"><a href="#4_12">How long will retrieved ip addresses remain in my HOSTS_DENY file?</a></td></tr>
+<tr><td>Q.&nbsp;4.13&nbsp;</td><td valign="top"><a href="#4_13">What is the cost of the synchronization service?</a></td></tr>
+<tr><td>Q.&nbsp;4.14&nbsp;</td><td valign="top"><a href="#4_14">What information is collected from me?</a></td></tr>
+<tr><td>Q.&nbsp;4.15&nbsp;</td><td valign="top"><a href="#4_15">How will information collected from me be used?</a></td></tr>
+<tr><td>Q.&nbsp;4.16&nbsp;</td><td valign="top"><a href="#4_16">What is the acceptable use policy of the data that denyhosts.net provides?</a></td></tr>
+<tr><td>Q.&nbsp;4.17&nbsp;</td><td valign="top"><a href="#4_17">I administer many commercial servers, can I run my own denyhosts.net server?</a></td></tr>
+</table>
+<hr>
+ <h1>General</h1>
+<a name="1_0"></a>
+<p align="right">A. 1.0</p><h2>What is DenyHosts?</h2><br>DenyHosts is a Python script that analyzes the sshd server log messages to determine what hosts 
+are attempting to hack into your system.  It also determines what user accounts are being targeted.
+It keeps track of the frequency of attempts from each host.  <p>
+
+Additionally, upon discovering a repeated attack host, the /etc/hosts.deny file is updated
+to prevent future break-in attempts from that host.
+<p>
+
+An email report can be sent to a system admin.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="1_1"></a>
+<p align="right">A. 1.1</p><h2>Who should use DenyHosts?</h2><br>Although DenyHosts is designed for the use by Linux system administrators, the script can be
+useful to anybody running an sshd server.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="1_2"></a>
+<p align="right">A. 1.2</p><h2>Who wrote DenyHosts?</h2><br>Phil Schwartz.  You can see some of the other cool projects that I have written on the 
+<a href="links.html">links page</a>.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="security"></a>
+<a name="1_3"></a>
+<p align="right">A. 1.3</p><h2>What steps can I take to make sshd more secure?</h2><br>OpenSSH has many settings that can be adjusted in order to increase security.  You may wish to refer to 
+OpenSSH security websites or to the many books on the subject. However, here are some things that you may 
+wish to consider based on my experience:<p>
+
+<ol>
+<li>Disable logins to <i>root</i>.  This can be accomplished by setting the <i>PermitRootLogin</i> setting 
+in the sshd_config file (typically, /etc/ssh/sshd_config).<br>
+<i>PermitRootLogin no</i>
+<p>
+
+<li>Disable password logins entirely by editing the <i>PasswordAuthentication</i> setting.  By doing so, 
+each user with access to the server will need to create ssh keys (which is beyond the scope of this 
+document).<br>
+<i>PasswordAuthentication no</i>
+<p>
+
+
+<li>Run sshd on a different port.  By default, sshd runs on port 22.  Most sshd hackers will only attack 
+port 22 so if you run sshd on a different port, the chances of being compromised are reduced dramatically.  
+However, by running sshd on an alternate port requires each user to be aware of this (so if your server is 
+accessed by many user accounts then this solution might not be feasible).  To run sshd on an alternate port 
+simply edit the sshd_config and set the <i>Port</i> setting appropriately:<br>
+<i>Port 9922</i><p>
+
+To access <i>yourserver</i> running on port 9922 you would connect using the <i>-p</i> command line 
+option:<br>
+$ <i>ssh -p 9922 yourserver</i>
+<p>
+Alternatively, you can edit your <i>$HOME/.ssh/config</i> file <i>or</i> your site-wide 
+<i>/etc/ssh/ssh_config</i> file and add an entry similar to:<p>
+
+<table border="0">
+<tr>
+<td>Host yourserver</td>
+</tr>
+<tr>
+<td align="right">Port 9922</td>
+</tr>
+</table>
+
+<p>
+
+<li>Install DenyHosts!
+
+</ol>
+
+<b>Note:</b> After saving changes to the sshd_config file you will need to restart 
+the sshd server for these settings to take effect
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="1_4"></a>
+<p align="right">A. 1.4</p><h2>What was the motivation behind DenyHosts?</h2><br>I run a number of Linux servers and I noticed that one of them was <a href="hack_tale.html">hacked 
+into</a>.  Upon browsing my sshd log I noticed that the system was targeted for some time and 
+eventually, somebody hacked out a password.  Had I been using DenyHosts, that never would've happened 
+(if only I had the foresight to write this script <i>before</i> my system was compromised!).  I then 
+looked at the logs of my other servers, and noticed hundreds of break-in attempts.  I wanted to 
+thwart these hosts <i>and</i> future attackers from attempting to hack into my system.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="1_5"></a>
+<p align="right">A. 1.5</p><h2>How does DenyHosts work?</h2><br>When run for the first time, DenyHosts will create a work directory.  The work directory will ultimately 
+store the data collected and the files are in a human readable format, for each editing, if necessary.  
+<p>
+
+DenyHosts then processes the sshd server log (typically, this is /var/log/secure, /var/log/auth.log, etc) 
+and determines which hosts have unsuccessfully attempted to gain access to the ssh server.  Additionally, 
+it notes the user and whether or not that user is <i>root</i>, otherwise <i>valid</i> (eg. has a system 
+account) or <i>invalid</i> (eg. does not have a system account).  <p>
+
+When DenyHosts determines that a given host has attempted to login using a non-existent user account a 
+configurable number of attempts (this is known as the <i>DENY_THRESHOLD_INVALID</i>), DenyHosts will add that host 
+to the /etc/hosts.deny file.  This will prevent that host from contacting your sshd server again. <p>
+
+The <i>DENY_THRESHOLD_ROOT</i> configuration value specifies the maximum acceptable times that the 
+<i>root</i> user account can fail to login before being blocked.  Typically this value is set lower than 
+<i>DENY_THRESHOLD_INVALID</i> such that root level attackers are blocked earlier than other accounts.  It is also a 
+good practice to <a href="#security">disable root logins</a> within the sshd.conf file in conjunction with 
+this setting. By doing so, no user can login to root@your-server and their host will be blocked from attacking other user accounts 
+when the <i>DENY_THRESHOLD_ROOT</i> is reached.
+
+<p>
+
+
+The <i>DENY_THRESHOLD_VALID</i> configuration value specifies the maximum acceptable times a valid user 
+(ie. a user that exists in /etc/passwd) can fail to login before being blocked.  This parameter 
+can be helpful for those with "fat fingers".  Typically this value is set higher than 
+<i>DENY_THRESHOLD_INVALID</i>.<p>
+
+Also, DenyHosts will note any successful logins that occurred by a host that has exceeded the <i>deny_threshold</i>.  
+These are known as <i>suspicious logins</i> and should be investigated further by the system admin.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="1_6"></a>
+<p align="right">A. 1.6</p><h2>What else does DenyHosts do?</h2><br>Please see the <a href="features.html">features page</a> for more information.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="1_7"></a>
+<p align="right">A. 1.7</p><h2>What are the requirements for running DenyHosts?</h2><br>Please see the <a href="requirements.html">requirements page</a>.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="invalid_syntax"></a>
+<a name="1_8"></a>
+<p align="right">A. 1.8</p><h2>I just installed DenyHosts and receive a SyntaxError: invalid syntax. What happened?</h2><br>If you see an error similar to this:<p>
+
+<pre>
+File "/etc/init.d/denyhosts", line 72  
+   if args: cmd+= ' '.join(args)
+                ^
+ SyntaxError: invalid syntax
+</pre>
+<p>
+
+Then you are using an <a href=#python_version>earlier version of Python</a>.  
+DenyHosts requires Python v2.3 or later.
+
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="python_version"></a>
+<a name="1_9"></a>
+<p align="right">A. 1.9</p><h2>My server has an earlier version of Python installed, can I still run DenyHosts?</h2><br>DenyHosts requires Python v2.3 or later.  If you are using an earlier version of Python then you should
+install a newer version of Python on your system.  Multiple versions of Python can safely co-exist on your server
+so you do not need to worry about breaking any dependencies.  You should
+<a href="http://www.python.org" target="x">obtain the latest version of Python</a> and install it on your system.
+Depending on the method of download, your latest Python executable is typically installed in 
+/usr/local/bin or /usr/bin.  <p>
+
+If you downloaded version Python v2.3, then the executable is python2.3.  If you downloaded 
+Python v2.4 then the executable is python2.4.  
+<p>
+If you will be using DenyHosts in daemon mode, then you will need to edit the 
+<a href="daemon-control-dist">daemon-control-dist</a> script.  You will want to copy this file to "daemon-control" 
+such that future DenyHosts upgrades will preserve your edits.<p>
+
+<i>$ cp daemon-control-dist daemon-control</i>
+<p>
+
+Assuming you installed Python v2.4 and the 
+executable is in /usr/bin then you will need to make the following changes to your daemon-control script:<p>
+
+<table border="0">
+<tr>
+<td width="15%"><b>Line #</b></td>
+<td width="50%"><b>From</b></td>
+<td width="35%"><b>To</b></td>
+</tr>
+<tr>
+<td>1</td>
+<td>#!/usr/bin/env python</td>
+<td>#!/usr/bin/python2.4</td>
+</tr>
+<tr>
+<td>18</td>
+<td>PYTHON_BIN      = "/usr/bin/env python"</td>
+<td>PYTHON_BIN      = "/usr/bin/python2.4"</td>
+</tr>
+</table>
+<p>
+
+You may need to modify the above paths to reflect the actual installation location and version of Python that
+you installed.
+<p>
+
+If you are not using DenyHosts in daemon mode then to execute DenyHosts you would do the following:
+<p>
+
+<i>$ python2.4 denyhosts ... args...</i>
+<p>-or-</p>
+<i>$ python2.3 denyhosts ... args...</i>
+
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="1_10"></a>
+<p align="right">A. 1.10</p><h2>Will DenyHosts work with my sshd configuration?</h2><br>Most likely it will work with your configuration. 
+However, please see the <a href="ssh_config.html">ssh 
+configuration page</a> for more details.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="1_11"></a>
+<p align="right">A. 1.11</p><h2>This FAQ is cool... I want one!  How did you create it?</h2><br>Funny you should ask.  I have also written 
+<a href="http://faqtor.sourceforge.net" target="x">FAQtor</a>, which
+is a <b>FAQ</b> genera<b>TOR</b>.  
+You can see my other projects on the <a href="links.html">links page</a>.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="logo"></a>
+<a name="1_12"></a>
+<p align="right">A. 1.12</p><h2>The DenyHosts logo is cool, who designed it?</h2><br>The DenyHosts logo was designed by <a href="http://curtistee.homelinux.org/" target="x">Curtis
+Taylor</a>.  Many thanks to Curtis for the logo.  Incidentally, Curtis also designed the
+<a href="http://releaseforge.sourceforge.net" target="x">ReleaseForge</a> logo.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="1_13"></a>
+<p align="right">A. 1.13</p><h2>Where can I download DenyHosts from?</h2><br>DenyHosts is available for 
+<a href="http://sourceforge.net/project/showfiles.php?group_id=131204">download from 
+SourceForge</a>.   <p>
+
+DenyHosts is currently released in several formats by the author:
+
+<ul>
+<li>Source tar.gz
+<li>An RPM for Python 2.3
+<li>An RPM for Python 2.4
+<li>Source RPM
+</ul>
+<p>
+
+Additionally, DenyHosts has been re-packaged and/or is available for the following distributions:
+<p>
+<ul>
+<li><a href="#fedora">Fedora Core</a>
+<li><a href="#fedora">Redhat</a>
+<li><a href="#debian">Debian</a>
+<li><a href="#gentoo">Gentoo</a>
+<li><a href="#solaris">Solaris</a>
+<li><a href="#freebsd">FreeBSD</a>
+<li><a href="#macos">Mac OS/X</a>
+</ul>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="fedora"></a>
+<a name="1_14"></a>
+<p align="right">A. 1.14</p><h2>Is DenyHosts available as a Redhat or Fedora Core package?</h2><br>Various RPM packages of DenyHosts are available from 
+<a href="http://dag.wieers.com/packages/denyhosts/">DAG Wieers repository</a>
+<p>
+
+Additionally, DenyHosts is included in the Fedora Extras repository
+repository and should be accessible via yum and/or up2date.  You can view the 
+appropriate repository: <p>
+
+<a href="http://download.fedora.redhat.com/pub/fedora/linux/extras/4/i386/">Fedora Core 4</a> 
+<br>
+
+<a href="http://download.fedora.redhat.com/pub/fedora/linux/extras/3/i386/">Fedora Core 3</a> 
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="debian"></a>
+<a name="1_15"></a>
+<p align="right">A. 1.15</p><h2>Is DenyHosts available as a Debian package?</h2><br>Thanks to Marco Bertorello, DenyHosts is now available as a 
+<a href="http://bertorello.ns0.it/debian/binary/denyhosts">Debian package</a>.
+<p>
+Falko Timme has written a "How To" document on 
+<a href="http://www.howtoforge.com/preventing_ssh_dictionary_attacks_with_denyhosts">How to 
+setup DenyHosts on Debian</a>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="macos"></a>
+<a name="1_16"></a>
+<p align="right">A. 1.16</p><h2>Is DenyHosts available for Mac OS/X?</h2><br>DenyHosts should work under Mac OS/X.  You will have to edit your denyhosts configuration file 
+(typically denyhosts.cfg) according to the Mac OS X version that you are running:<p>
+
+If you are using <a target="x" href="mac_os_10_4.txt">Mac OS v10.4 or greater</a>
+<p>
+
+If you are using <a target="x" href="mac_os_10_3.txt">Mac OS v10.3 or earlier</a>
+<p>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="gentoo"></a>
+<a name="1_17"></a>
+<p align="right">A. 1.17</p><h2>Is DenyHosts available for Gentoo?</h2><br>I'm not a Gentoo user so I can't provide a package for Gentoo.  However, 
+Mike Kelly has released a 
+<a href="http://bugs.gentoo.org/show_bug.cgi?id=100043" target="x">Gentoo package</a> 
+for DenyHosts.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="donate"></a>
+<a name="1_18"></a>
+<p align="right">A. 1.18</p><h2>DenyHosts is cool, can I make a generous donation?</h2><br>Unfortunately, your 
+<a href="http://sourceforge.net/donate/index.php?group_id=131204">donation</a>
+can not exceed $250 US, but I'll accept it anyway :) <p>
+
+Portions of your donation help support SourceForge and the Python Software Foundation
+(and PayPal takes a piece too).  Whatever money remains will no doubt be spent on
+delicious beer and other less important necessities of life.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="other"></a>
+<a name="1_19"></a>
+<p align="right">A. 1.19</p><h2>Are there other tools similar to DenyHosts?</h2><br>Yes.  There are plenty of other tools that have the same goal as DenyHosts but have different
+implementations.  Here is a short list of those that I am aware of:
+
+<ul>
+<li><a href="http://fail2ban.sourceforge.net" target="x">Fail2Ban</a>
+<li><a href="http://www.aczoom.com/cms/blockhosts/" target="x">BlockHosts</a>
+<li><a href="http://blinkeye.ch/mediawiki/index.php/SSH_Blocking" target="x">Blacklist</a>
+</ul>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+ <h1>Configuring DenyHosts</h1>
+<a name="2_0"></a>
+<p align="right">A. 2.0</p><h2>How do I configure DenyHosts?</h2><br>DenyHosts uses a simple configuration file.  An example, <i>denyhosts.cfg-dist</i> is 
+supplied in the distribution.  This file should be copied to <i>denyhosts.cfg</i> and edited 
+to match your system configuration.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="cron"></a>
+<a name="2_1"></a>
+<p align="right">A. 2.1</p><h2>How do I configure cron for DenyHosts use?</h2><br>Presumably, you will need to run DenyHosts as root (in order for DenyHosts to update /etc/hosts.deny and read 
+entries from /var/log), so you first must become root.  Once you have either logged in as root (or 
+used <i>su - root</i>, for instance) you can then run the following command:<p>
+
+# <i>crontab -e</i>
+<p>
+
+The above command will launch the crontab editor.  To launch DenyHosts every 20 minutes you would then add the 
+following line to the crontab:<p>
+
+<i>0,20,40 * * * * python <b>PATH_TO_DENYHOSTS/</b>denyhosts.py -c 
+<b>PATH_TO_DENYHOSTS_CONFIG/</b>denyhosts.cfg</i><p>
+
+You will need to substitute your site-specific paths above.  As an example, if you installed DenyHosts in 
+/usr/local/etc and maintain your configuration file there as well, then the following crontab entry would be 
+appropriate:
+<p>
+
+<i>0,20,40 * * * * python /usr/local/etc/denyhosts/denyhosts.py -c /usr/local/etc/denyhosts/denyhosts.cfg</i>
+<p>
+
+Once you have edited the crontab you should then save it. Assuming you didn't make any errors,
+the crontab will automatically install itself. 
+<p>
+For more information regarding the crontab format please see the crontab man page (<i>man 5 crontab</i>).
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="2_2"></a>
+<p align="right">A. 2.2</p><h2>How can I disable hostname lookups?</h2><br>Denyhosts v0.6.0 added a feature to lookup corresponding hostnames for ip addresses that it 
+reports.  The default enables these lookups.  If you wish to disable this behavior you can 
+edit your DenyHosts configuration file and set the <i>HOSTNAME_LOOKUP</i> parameter to 
+<i>NO</i>.  The default is <i>YES</i>.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="metalog"></a>
+<a name="2_3"></a>
+<p align="right">A. 2.3</p><h2>Will DenyHosts work with metalog?</h2><br>Yes.  Metalog is an alternative to syslog and is the standard logging agent on (some) Gentoo 
+systems. <p>
+
+Based on a patch contributed by Mike Kelly, DenyHosts 0.7 and greater will successfully parse 
+syslog and metalog log formats.  This feature is implemented in a seemless manner so there is 
+no further configuration necessary in order to use DenyHosts with metalog.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="freebsd"></a>
+<a name="2_4"></a>
+<p align="right">A. 2.4</p><h2>Will DenyHosts work with FreeBSD?</h2><br>Yes.  According to Frencesca Smith, DenyHosts 0.7 and greater will work under FreeBSD.  
+DenyHosts automatically detects if you are running it under FreeBSD and if so, will append 
+your deny entries with "<i> : deny</i>".  You should also update your HOSTS_DENY 
+configuration value to "<i>/etc/hosts.allow</i>" since FreeBSD does not recognize the default 
+"<i>/etc/hosts.deny</i>" file that many other vendors use.<p>
+
+You may also wish to view these items:
+
+<ul>
+<li>
+<a href="#freebsdaux">this FAQ answer</a>
+
+<li>
+<a href="http://linuxgal.com/phpmyfaq/index.php?action=artikel&cat=1&id=1&artlang=en" target="x">article</a> 
+written by Francesa Smith that provides more information.
+
+</ul>
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="solaris"></a>
+<a name="2_5"></a>
+<p align="right">A. 2.5</p><h2>Will DenyHosts works with Solaris?</h2><br>Yes.  DenyHosts has been reported to work with Solaris.  However, since Solaris uses a 
+pam_afs format for logging messages, you will need to <a href="solaris.txt">add this line</a> to 
+your configuration file (typically, <i>denyhosts.cfg </i>).
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="aux"></a>
+<a name="2_6"></a>
+<p align="right">A. 2.6</p><h2>Can I use a non-standard hosts.deny file?</h2><br>Yes.  To do so follow this procedure:<p>
+<ol>
+<li>edit your <i>HOSTS_DENY</i> configuration value to point it to another file 
+such as "/etc/hosts.evil".
+
+<li>edit your <i>BLOCK_SERVICE</i> configuration value and leave it blank
+
+<li>edit your <i>/etc/hosts.allow</i> file and add:<p>
+<i>sshd: ALL EXCEPT /etc/hosts.evil</i>
+
+<li>issue the following command:<br>
+<i>touch /etc/hosts.evil</i>
+</ol>
+
+This will result in tcp_wrappers allowing all hosts to login <b>except</b> for those hosts 
+explicitly listed in
+
+<i>/etc/hosts.evil</i>.  <p>
+
+This procedure will only work on DenyHosts 0.7 and greater and was implemented based on a 
+patch contributed by John Meinel Jr.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="freebsdaux"></a>
+<a name="2_7"></a>
+<p align="right">A. 2.7</p><h2>Can I use DenyHosts on FreeBSD using a non-standard hosts.deny file?</h2><br>Yes.  Beginning with DenyHosts version 0.7.2 this can be accomplished by following these 
+steps:
+
+<ol>
+<li>edit your <i>HOSTS_DENY</i> configuration value to point it to another file
+such as "/etc/hosts.evil".
+
+<li>edit your <i>BLOCK_SERVICE</i> configuration value and leave it blank
+
+<li>edit your <i>/etc/hosts.allow</i> file and add:<p>
+<i>sshd : /etc/hosts.evil : deny<br>
+sshd : ALL : allow</i>
+
+<li>issue the following command:<br>
+<i>touch /etc/hosts.evil</i>
+</ol>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="purge"></a>
+<a name="2_8"></a>
+<p align="right">A. 2.8</p><h2>Can DenyHosts purge old entries added to the HOSTS_DENY file?</h2><br>DenyHosts v0.8.0 (and greater) offers the ability to remove old entries from the <i>HOSTS_DENY</i> 
+file (eg. <i>/etc/hosts.deny</i>).  You must set the <i>PURGE_DENY</i> parameter in your 
+configuration file and invoke DenyHosts with the <i>--purge</i> command line flag:<p>
+
+$ <i>denyhosts.py --purge</i><p>
+
+When DenyHosts is run with the <i>--purge</i> flag it locates entries in the <i>HOSTS_DENY</i> file 
+that have been previously timestamped by DenyHosts that have exceeed the <i>PURGE_DENY</i> value 
+using the following algorithm:
+
+<ol>
+<li><i>HOSTS_DENY</i> is backed up to a file named <i>HOSTS_DENY.purge.bak</i>
+
+<li>a temp file is created, <i>HOSTS_DENY.purge.tmp</i>
+
+<li>the <i>HOSTS_DENY</i> is parsed and each non-expired entry and each non-timestamped entry
+
+will be written to <i>HOSTS_DENY.purge.tmp</i>
+
+<li>each <i>HOSTS_DENY</i> that has expired (based on <i>PURGE_DENY</i>) will <i>not</i> be written to 
+
+<i>HOSTS_DENY.purge.tmp</i>
+
+<li> after all lines are parsed, if atleast one entry was not written to 
+<i>HOSTS_DENY.purge.tmp</i> (that is, no entries were expired) then 
+<i>HOSTS_DENY.purge.tmp</i> will be deleted and no further processing will be performed.
+
+<li>otherwise, <i>HOSTS_DENY.purge.tmp</i> is moved to <i>HOSTS_DENY</i> (atomically-- such that 
+even in the case of failure, the <i>HOSTS_DENY</i> should always be present).  In the event of a 
+catastrophic emergency you can manually move the <i>HOSTS_DENY.purge.bak</i> back to 
+<i>HOSTS_DENY</i>.
+
+</ol>
+<p>
+
+The <i>PURGE_DENY</i> value is given as a <a href="#timespec">time specification</a>.
+
+<ul>
+<li>PURGE_DENY =    # an empty value disables the purge facility 
+<li>PURGE_DENY = 1h # purge entries older than one hour
+<li>PURGE_DENY = 20m # purge entries older than twenty minutes
+<li>PURGE_DENY = 31d # purge entries older than 31 days
+<li>PURGE_DENY = 2w # purge entries older than two weeks
+<li>PURGE_DENY = 1y # purge entries older than one year
+</ul>
+<p>
+
+Entries in <i>HOSTS_DENY</i> that were added before the <i>PURGE_DENY</i> value was defined 
+(for example, if you upgraded from a previous version of DenyHosts or you have just decided 
+to enable the purge functionality) will not be impacted by the <i>--purge</i> flag.  
+However, if you wish for these "legacy" <i>HOSTS_DENY</i> entries to be subject to expiration 
+then you will need to <a href="#migrate">migrate your <i>HOSTS_DENY</i> data</a>.<p>
+
+Once <i>PURGE_DENY</i> has been configured to a non-empty value, DenyHosts will automatically 
+timestamp each record that is added to <i>HOSTS_DENY</i>.  If <i>PURGE_DENY</i> is empty then 
+DenyHosts will <i>not</i> timestamp the records added to <i>HOSTS_DENY</i>.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="timespec"></a>
+<a name="2_9"></a>
+<p align="right">A. 2.9</p><h2>What time values are appropriate for PURGE_DENY, DAEMON_SLEEP, DAEMON_PURGE?</h2><br>Denyhosts configuration parameters that expect a unit of time as a value are specified as such:<p>
+
+<i>number[period]</i>
+
+Where number is any integer greater than zero and period can contain one of the values in: 
+<i>s, m, h, d, w, y</i>.  Where: 
+
+<ul>
+<li>s: seconds
+<li>m: minutes
+<li>h: hours
+<li>d: days
+<li>w: weeks
+<li>y: years
+</ul>
+
+<p>
+
+If the period is blank, then seconds is assumed.<p>
+
+Examples:
+<ul>
+<li>1d is one day
+<li>10 is 10 seconds
+<li>10s is 10 seconds
+<li>3w is 3 weeks
+<li>30m is 30 minutes
+<li>120d is 120 days
+</ul>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="upgrade100"></a>
+<a name="2_10"></a>
+<p align="right">A. 2.10</p><h2>I just upgraded to 1.0.0, what do I need to do?</h2><br>Users upgrading from versions prior to 0.9.9 should also see <a href="#upgrade099">this FAQ answer</a>.
+<p>
+
+DenyHosts 1.0.0 adds two additional required configuration parameters that must be defined.  You can
+refer to the <i>denyhosts.cfg-dist</i> file for sample usage of the new <i>DENY_THRESHOLD_ROOT</i> and 
+<I>DENY_THRESHOLD_VALID</i> parameters.  These parameters are also <a href="#threshold">documented</a>.
+
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="upgrade099"></a>
+<a name="2_11"></a>
+<p align="right">A. 2.11</p><h2>I just upgraded to 0.9.9 (or later) what do I need to do?</h2><br>If you are upgrading to v0.9.9 (or later) from DenyHosts 0.8.0 through 0.9.8 <i>and</i> you have 
+previously set <i>PURGE_DENY</i> in your configuration file then you <b>must</b> do the 
+following:<p>
+
+To upgrade your <i>HOSTS_DENY</i> file to the new timestamped format you must first invoke 
+denyhosts with the <i>--upgrade099</i> flag.<p>
+
+$ <i>denyhosts.py --upgrade099</i><p>
+
+Versions between 0.8.0 and 0.9.8 added a comment-timestamp (when <i>PURGE_DENY</i> was set) that 
+caused tcp_wrappers to report an error.  DenyHosts 0.9.9 fixes this problem by upgrading the 
+entries of <i>HOSTS_DENY</i> to an alternative format which should prevent errors from being 
+reported.  <p>
+
+If you are upgrading from a version prior to 0.8.0 <i>or</i> have not yet set <i>PURGE_DENY</i> 
+then there is no need to upgrade.  If you wish to now set <i>PURGE_DENY</i> for the first time then 
+you should run DenyHosts with the <a href="#migrate">--migrate</a> flag rather than the 
+--upgrade099 flag.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="custom_regex"></a>
+<a name="2_12"></a>
+<p align="right">A. 2.12</p><h2>DenyHosts is unable to parse my syslog (or other) log file</h2><br>New to version 0.9.9 (and greater), DenyHosts allows the end user to supply custom regular 
+expressions that may be necessary to parse unusual <i>SECURE_LOG</i> files.  This feature 
+requires regular expression knowledge.  If you are unsure how to parse your particular log 
+file please feel free to <a href="http://sourceforge.net/users/phil_schwartz/">email me 
+directly</a> for regex support.<p>
+
+The following regex entries can be overridden in your denyhosts.cfg file:<p>
+
+<ul>
+<li>SSHD_FORMAT_REGEX
+<li>FAILED_ENTRY_REGEX
+<li>FAILED_ENTRY_REGEX2
+<li>FAILED_ENTRY_REGEX3
+<li>FAILED_ENTRY_REGEX4
+<li>FAILED_ENTRY_REGEX5
+<li>FAILED_ENTRY_REGEX6
+<li>SUCCESSFUL_ENTRY_REGEX
+</ul>
+
+<p>Note that each of these configuration parameters are completely optional.  
+If a value is not configured within this file then the default value will be used.  
+The defaults can be seen by viewing the DenyHosts/regex.py file within the 
+source distribution.<p>
+
+When providing a custom regular expression make sure that you only include the 
+portions between the opening and closing triple-quotes (ie. '''<b>this value</b>''').  
+That is, if you are modifying the SSHD_FORMAT_REGEX which appears in DenyHosts/regex.py as:<p>
+
+<i>SSHD_FORMAT_REGEX = re.compile(r""".* (sshd.*:|\[sshd\]) (?P<<i>message></i>.*)""")</i><p>
+
+You would enter the following in your denyhosts.cfg file:<p>
+
+<i>SSHD_FORMAT_REGEX = .* (sshd.*:|\[sshd\]) (?P<<i>message></i>.*)</i><p>
+
+You could then customize the above regex as you see fit based on your log file's particular 
+format. You can use a tool such as <a href="http://kodos.sourceforge.net">Kodos</a> (also 
+developed by <a href="http://www.phil-schwartz.com">Phil Schwartz</a>) to test your custom 
+regex patterns against your log contents.<p>
+
+If I do provide you with a custom regex that helps DenyHosts perform for your particular
+configuration, please consider making a
+<a href="http://sourceforge.net/donate/index.php?group_id=131204">donation</a>.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="userdef_regex"></a>
+<a name="2_13"></a>
+<p align="right">A. 2.13</p><h2>Can I supply additional regular expressions to DenyHosts?</h2><br>Yes.  New in v1.1.5, DenyHosts adds the ability for the user to specify additional
+regular expressions that can be used to locate possible break-in attempts.  The 
+<i>USERDEF_FAILED_ENTRY_REGEX</i> can be specified repeatedly.  Each value must
+contain a single regular expression that includes a <i>host</i> regular expression group and
+optionally a <i>user</i> group.  It is assumed that the end user is familiar with regular
+expressions in order to take advantage of this feature.  <p>
+
+Examples:<p>
+
+<i>USERDEF_FAILED_ENTRY_REGEX=break in attempt for (?P<user>.*) from (?P<host>.*)</i><br>
+<i>USERDEF_FAILED_ENTRY_REGEX=break in attempt from (?P<host>.*)</i><p>
+
+If multiple <i>USERDEF_FAILED_ENTRY_REGEX</i> are supplied they are evaluated in the order
+that they appear in the configuration file.  Additionally, this parameter is evaluated 
+<i>after</i> the built-in regular expressions (ie. FAILED_ENTRY_REGEX, FAILED_ENTRY_REGEX2, ...).
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="2_14"></a>
+<p align="right">A. 2.14</p><h2>What is the difference between <i>FAILED_ENTRY_REGEX</i> and 
+<i>USERDEF_FAILED_ENTRY_REGEX</i>?
+</h2><br><i>FAILED_ENTRY_REGEX, FAILED_ENTRY_REGEX2, FAILED_ENTRY_REGEX3 ...</i> refer to the
+regular expressions that DenyHosts uses in order to recognize hackers.  Under most
+circumstances these are adequate.  However, if DenyHosts is unable to parse your logfile
+then these <a href="#custom_regex">regular expressions should be overridden</a> in your
+configuration file.<p>
+
+The optional <a href="#userdef_regex"><i>USERDEF_FAILED_ENTRY_REGEX</i></a> 
+configuration parameter can be specified in order to add additional 
+regular expressions to DenyHosts which may allow it to identify more hacker attempts 
+based on your particular configuration.  Therefore, these regular expressions do not
+replace the non-<i>USERDEF</i> versions and are intended to extend DenyHosts hacker
+recognition.  
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="multilog"></a>
+<a name="2_15"></a>
+<p align="right">A. 2.15</p><h2>Can I use DenyHosts with djb multilog?</h2><br>DenyHosts v0.9.9 (and greater) supports DJB's multilog output format.  
+The output format appears as: <p>
+
+<i>
+@4000000042f4e1d3057febbc Failed password for invalid user network ... <br>
+@4000000042f4e1d305800ee4 Connection closed by ... 
+</i><p>
+
+In order for DenyHosts to easily parse this log format, simply edit your denyhosts.cfg file 
+and add the following line:<p>
+
+<i>SSHD_FORMAT_REGEX = @.*? (?P<<i>message></i>.*)</i><p>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="2_16"></a>
+<p align="right">A. 2.16</p><h2>Why isn't DenyHosts recognizing successful ssh logins?</h2><br>Unfortunately, all log files are not created equally.  Depending on the format of your log file, 
+DenyHosts may not be able to process all of the entries.  You can supply a suitable
+<a href="#custom_regex">custom regular expression</a> in your configuration file.<p>
+
+For instance, if your log file has the following entry:
+<p>
+<pre>
+error: PAM: authentication error for SOME_VALID_USERNAME from 192.168.1.1
+</pre>
+
+Then <a target="x" href="pam_auth_err.txt">adding this to your configuration file</a> should resolve the 
+issue.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="threshold"></a>
+<a name="2_17"></a>
+<p align="right">A. 2.17</p><h2>What is the difference between DENY_THRESHOLD_INVALID, DENY_THRESHOLD_ROOT
+and DENY_THRESHOLD_VALID and DENY_THRESHOLD_RESTRICTED?</h2><br><i>DENY_THRESHOLD_INVALID</i> - applies to non-existent (aka invalid accounts that do not appear in 
+/etc/passwd) user accounts<p>
+
+<i>DENY_THRESHOLD_ROOT</i> - applies to login attempts to the <i>root</i> user account<p>
+
+<i>DENY_THRESHOLD_VALID</i> - applies to existent user accounts (those that exist 
+within /etc/passwd)<p>
+
+<i>DENY_THRESHOLD_RESTRICTED</i> - (New in v2.1)  Applies to the optionally defined usernames in 
+WORK_DIR/restricted-usernames.  See <a href="#restricted">restricted users</a> for more 
+details.<p>
+
+Typically, the value for <i>DENY_THRESHOLD_VALID</i> should be larger than the 
+<i>DENY_THRESHOLD_INVALID</i> value and the value for <i>DENY_THRESHOLD_ROOT</i> should be less 
+than <i>DENY_THRESHOLD_INVALID</i>.  That is:<br>
+
+<i>DENY_THRESHOLD_ROOT < DENY_THRESHOLD_INVALID < DENY_THRESHOLD_VALID</i>
+<p>
+<i>DENY_THRESHOLD_RESTRICTED</i> should typically be the same as <i>DENY_THRESHOLD_ROOT</i>.
+<p>
+
+As an example, consider a system "myhost" that has a valid user "foo" and an invalid user 
+"bar" (that is, "foo" exists in the /etc/passwd file on "myhost", whereas "bar" does not).  
+If a user at host 1.1.1.1 attempts to login to "foo@myhost" more than 
+<i>DENY_THRESHOLD_VALID</i> then 1.1.1.1 will be blocked (added to the <i>HOSTS_DENY</i> 
+file).  However, if a user at 2.2.2.2 had attempted to login to "bar@myhost" then that IP 
+address would be blocked after <i>DENY_THRESHOLD_INVALID</i> attempts.  If a user at 3.3.3.3 
+attempted to login to multiple accounts ("foo" and "bar") then the IP address would be 
+blocked as soon as either threshold was exceeded.  <p>
+
+Therefore, at most, a malicious user can attempt to gain access to your system 
+<i>DENY_THRESHOLD_INVALID</i> + <i>DENY_THRESHOLD_VALID</i> times before being 
+added to <i>HOSTS_DENY</i>.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="restricted"></a>
+<a name="2_18"></a>
+<p align="right">A. 2.18</p><h2>Can I specify a set of users that should never be able to login?</h2><br>New in v2.1.  DenyHosts now allows you to create a file, <i>restricted-usernames</i> in the
+DenyHosts <i>WORK_DIR</i>.  The contents of this optional file should contain one username
+per line. Each username listed is considered to be a restricted account or simply, any 
+username that satisfies these scenarios: <p>
+
+<ul>
+<li>An account that does not allow logins (such as <i>lpd</i>)
+<li>An account that should never login via ssh (such as <i>mysql</i>)
+<li>A ficticious username that often is associated with hackers (such as <i>toor</i>)
+</ul>
+<p>
+
+Any username listed in the <i>restricted-usernames</i> file will be subject to the
+<i>DENY_THRESHOLD_RESTRICTED</i> configuration setting (by default this will be set
+to <i>DENY_THRESHOLD_ROOT</i>). <p>
+
+To aid in creating a suitable <i>restricted-usernames</i> file there are currently 2 scripts in 
+the <i>scripts</i> subdirectory:
+
+<ul>
+<li><i>restricted_from_passwd.py</i> will parse the /etc/passwd
+file, find each of the usernames that have <i>/sbin/nologin</i>, <i>/sbin/halt</i>
+or <i>/sbin/shutdown</i> shells and output them to the console.  You can either cut-and-paste
+these into <i>restricted-usernames</i> or redirect the output to this file.
+
+<li><i>restricted_from_invalid.py</i> will parse DenyHosts invalid login attempts file and
+find the most frequently attacked user accounts on your system.  You must provide your
+WORK_DIR setting on the command line so that this script can locate the necessary file to
+parse, namely <i>users-invalid</i>.  You can also specify the number of usernames to display,
+the default is 10.
+
+</ul>   
+
+<p>
+<b>Note:</b> This <i>restricted-usernames</i> file is loaded at start-up time so any
+changes you make while the DenyHosts daemon is still running will not take effect until
+you restart the daemon.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="timestamp"></a>
+<a name="2_19"></a>
+<p align="right">A. 2.19</p><h2>Can I specify an alternate timestamp format for the DAEMON_LOG file?</h2><br>As of DenyHosts v1.0.1, yes!<p>
+
+By default, DenyHosts (when run in daemon mode) will timestamp log entries with an ISO8061 timestamp 
+format.  This may be undesirable for some users and may not blend easily with 3rd party packages such as 
+log_check, log_watch, etc).  To specify an alternate timestamp format, simply set the 
+<i>DAEMON_LOG_TIME_FORMAT</i> parameter in the denyhosts.cfg file.  It is recommended that you refer to the 
+man page for <i>strftime</i> for possible values. <p>
+
+A typical alternative timestamp may be <i>Jan 1 22:05:59</i>.  To set the <i>DAEMON_LOG_TIME_FORMAT</i> to 
+this format, insert the following line in your denyhosts.cfg file:<p>
+
+<i>DAEMON_LOG_TIME_FORMAT = %b %d %H:%M:%S</i>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="age_reset"></a>
+<a name="2_20"></a>
+<p align="right">A. 2.20</p><h2>Can failed login attempts be reset over a period of time?</h2><br>DenyHosts will automatically block hosts that fail to successfully login after a user configured
+<a href="#threshold">threshold</a> is exceeded.  Starting with version 1.1, DenyHosts will automatically
+reset the failed login attempts to 0 when a host fails to login and the previous failed attempt from
+this same host exceeds the respective <i>AGE_RESET_*</i> value.<p>
+
+The <i>AGE_RESET_*</i> parameters are optional.  If not provided, failed login attempts per host will
+not be reset automatically (this is the behavior in previous versions of DenyHosts).  The following
+parameters can be specified in the DenyHosts configuration file:<p>
+
+<ul>
+<li><i>AGE_RESET_VALID</i> - applies to login attempts to existant users (those that appear in /etc/passwd) with the exception of the <i>root</i> user
+<li><i>AGE_RESET_ROOT</i> - applies to the <i>root</i> user account
+<li><i>AGE_RESET_INVALID</i> - applies to non-existant users (those that do not appear in /etc/passwd)
+<li><i>AGE_RESET_RESTRICTED</i> - (new in 2.1) applies to usernames that are optionally defined 
+in WORK_DIR/restricted-usernames (typically, usernames that appear in /etc/passwd that should not
+be able to login, such as "lpd" or "apache")
+</ul>
+
+If desired, these parameters and their values can be <a href="#timespec">specified</a> in the 
+DenyHosts configuration file.<p>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="reset_on_success"></a>
+<a name="2_21"></a>
+<p align="right">A. 2.21</p><h2>Can failed login attempts be reset automatically?</h2><br>Although the <a href="#age_reset">AGE_RESET_*</a> factility may be ideal for most situations, 
+DenyHosts v2.1 introduces the optional parameter <i>RESET_ON_SUCCESS</i>.
+
+DenyHosts will automatically block hosts that fail to successfully login after a user configured 
+<a href="#threshold">threshold</a> is exceeded.  If <i>RESET_ON_SUCCESS = yes</i> then the 
+failed login attempts will be reset to 0 for the respective ip address if a user successfully logs
+in from this ip address.   The default is <i>RESET_ON_SUCCESS = no</i>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="plugin"></a>
+<a name="2_22"></a>
+<p align="right">A. 2.22</p><h2>Does DenyHosts support plugins?</h2><br>In v1.1.0 and greater, DenyHosts introduces support for plugin applications to be run when DenyHosts adds
+a new entry to the <i>HOSTS_DENY</i> file and when an entry is purged from <i>HOSTS_DENY</i>.<p>
+
+Two optional configuration parameters exist to support plugins.  They are:<p>
+
+<ul>
+<li><i>PLUGIN_DENY</i> - specifies the program to be run when a host is blocked by DenyHosts
+<li><i>PLUGIN_PURGE</i> - specifies the program to be run when a host is no longer blocked by DenyHosts
+</ul>
+
+<b>Note</b>: <i>program</i> can be any executable (script, application, etc...).<p>
+
+Each of the executed programs will receive the host (typically the IP address) that was denied/purged as
+it's sole argument.  
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="spawn"></a>
+<a name="2_23"></a>
+<p align="right">A. 2.23</p><h2>Can TCPWRAPPERS automatically invoke DenyHosts per login attempt?</h2><br>Apparently, yes!  Thanks to Tilo Winkler for providing an example of 
+<a href="http://tdot.blog-city.com/securing_ssh_with_denyhosts.htm" target="x">spawning DenyHosts
+from TCPWRAPPERS</a>.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="environ"></a>
+<a name="2_24"></a>
+<p align="right">A. 2.24</p><h2>Can I dynamically specify configuration values?</h2><br>Starting with DenyHosts version 2.2, you can now specify all or part of a configuration
+value to use an environment variable setting. <p>
+
+To specify a dynamically substituted value you specify the portion of the value you
+would like to replace using the syntax <i>$[ ... ]</i> where the <i>...</i> maps to an
+environment variable name.
+
+<p>
+Notes: the environment variable must be specified in UPPERCASE and will be retrieved from the
+local environment when DenyHosts is started.  Therefor, if you make a change to the underlying
+environment variable that you would like DenyHosts to use then you must restart DenyHosts.
+<p>
+
+You may wish to do this, for instance, if you run DenyHosts on several servers and would like 
+to use the same configuration file on each.  In this case, you may want to dynamically 
+specify the server name for the SMTP_SUBJECT option. <p> 
+
+<i>SMTP_SUBJECT = DenyHosts report - $[HOSTNAME]</i> 
+<p>
+If the systems HOSTNAME environment variable is defined as <i>foo.bar.com</i> then
+the SMTP_SUBJECT will be interpreted as:
+<p>
+<i>SMTP_SUBJECT = DenyHosts report - foo.bar.com</i>
+<p>
+
+All DenyHosts configuration values can be specified to include environment variables in this way.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+ <h1>Using DenyHosts</h1>
+<a name="firsttime"></a>
+<a name="3_0"></a>
+<p align="right">A. 3.0</p><h2>I've configured DenyHosts, now what?</h2><br>If you have several log files (eg. in your /var/log directory you have ssh server logs with .1, 
+.2, ... .n) due to log rotation then it is best to process the old files first.<p>
+
+This can be done by invoking DenyHosts with the <i>--file=</i> flag:<br>
+$ <i>python denyhosts.py --file=/var/log/secure.log.1</i><p>
+
+Additionally, you can process several files at once:<br>
+$ <i>python denyhosts.py --file=/var/log/secure.log.1 --file=/var/log/secure.log.2 .... --file=/var/log/secure.n</i><p>
+
+<b>Note</b>: You must run DenyHosts as <i>root</i> so that it can read /var/log/ files <i>and</i> update the 
+/etc/hosts.deny file 
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="3_1"></a>
+<p align="right">A. 3.1</p><h2>Do I need to run DenyHosts as root?</h2><br>If you are running DenyHosts in <a href="#daemon">daemon mode</a> then <i>yes</i> you must run DenyHosts as root.  
+<p>
+
+In all other cases, such as running DenyHosts from <a href="#cron">cron</a> then technically speaking, <i>no</i>.  
+However, in order to run DenyHosts as non-root you must ensure that you have read-permissions 
+on the /var/log/ sshd server logs.  Alternatively, you can copy them to a directory where you do have read-permissions.
+<p>
+
+Also, in order for DenyHosts to block hosts, it needs write permissions for the /etc/hosts.deny file.  DenyHosts will 
+gladly run without being able to update this file.  In this mode, the hosts that should be blocked are written to stdout 
+(in a form suitable for pasting into /etc/hosts.deny).  Also, you can use an <a href="aux">alternate HOSTS_DENY</a> 
+file (other than /etc/hosts.deny) which may not require root priviledges.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="3_2"></a>
+<p align="right">A. 3.2</p><h2>How should DenyHosts be run?</h2><br>Version 0.9.0 introduces <a href="#daemon">daemon mode</a> support.  If you run DenyHosts with the <i>--daemon</i> 
+flag, then DenyHosts will run constantly in the background.  See the previous link for more details.
+<p>
+
+In addition to the deamon mode, DenyHosts can also be run periodically from the command line.  If you do not wish to 
+use the daemon mode, then I recommend that DenyHosts be run from <a href="#cron">cron</a> on a routine basis.  
+DenyHosts is fairly lightweight and does not put an excessive drain on system resources.  DenyHosts initially checks 
+to see if the sshd log has changed in size and if it determines that it hasn't, then it exits without further 
+processing.  If the log has changed, DenyHosts only examines the portion that has changed.<p>
+
+The interval between DenyHosts runs is left up to the user.  Personally, I run DenyHosts every 10 minutes. 
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="rotate"></a>
+<a name="3_3"></a>
+<p align="right">A. 3.3</p><h2>When my logs are rotated will DenyHosts work properly?</h2><br>Yes.  DenyHosts checks the first line of your sshd server log file and the file size.  It then compares these
+values to the previous invocation of DenyHosts.  <p>
+
+<ul>
+<li>If the first line is different, then DenyHosts will process the entire 
+log file (since it is assumed that the log has been rotated). 
+
+<li>If the first line is the same it then compares the file size to the last runs offset.  
+   <ul>
+   <li>If they are the same, then DenyHosts assumes that there are no changes and exits.  
+   <li>If the current file size is greater then the last offset, then the 
+log file is processed from the last offset.
+   </ul>
+
+<li>When DenyHosts exits it stores the first line of the processed log file and the file offset into the <i>offset</i> 
+file (which is located in the <i>WORK_DIR</i> that is defined in your <i>denyhosts.cfg</i> file).
+</ul>
+ 
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="3_4"></a>
+<p align="right">A. 3.4</p><h2>I want to process the entire log file regardless of the last offset, how can I do this?</h2><br>Although I'm not sure <i>why</i> you'd want to do this, DenyHosts provides the <i>--ignore</i> command line argument for 
+this purpose.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="3_5"></a>
+<p align="right">A. 3.5</p><h2>DenyHosts exits without producing any output, what happened?</h2><br>Since DenyHosts is intended to run from cron, by default it therefor tries to minimize output.
+In general, only error conditions are output.<p>
+However, if you'd like to see more details of what it's doing, you can supply the <i>--verbose</i> flag on the command 
+line.  <p>
+
+Alternatively, if you'd like to see all of the gory details of what DenyHosts is doing, you can invoke DenyHosts 
+with the <i>--debug</i> flag.  It is recommened, when <a href="#bug">reporting a bug</a> that you supply the output from 
+running DenyHosts with the <i>--debug</i> flag.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="3_6"></a>
+<p align="right">A. 3.6</p><h2>I don't want to receive an email report of hosts added to /etc/hosts.deny.</h2><br>That's not a question.<p>
+Seriously, though, if you would like to disable the email reports you can either edit the <i>denyhosts.cfg</i>
+file (and set the admin_email value to nothing) or run the script with the <i>--noemail</i> flag supplied.<p>
+
+# in your denyhosts.cfg file:<br>
+ADMIN_EMAIL=<p>
+
+# command line:<br>
+$ <i>python denyhosts.py --noemail</i>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="allowed"></a>
+<a name="3_7"></a>
+<p align="right">A. 3.7</p><h2>How can I prevent a legitimate IP address from being blocked by DenyHosts?</h2><br>Since it is quite possible for a user to mistype their password repeatedly it may be desirable to
+have DenyHosts prevent specific IP addresses from being added to <i>/etc/hosts.deny</i>.  To address 
+this issue, create a file named <i>allowed-hosts</i> in the <i>WORK_DIR</i>.  Simply add an IP 
+address, one per line.  Any IP address that appears in this file will not be blocked. 
+<p>
+Additionally, as of v1.0.3, a valid hostname can also be placed in the <i>allowed-hosts</i> file.
+For each hostname appearing in this file, the IP address will be resolved and any ssh connections
+that match either this hostname <i>or</i> this resolved IP address will not be blocked.
+
+<i>
+# this is a comment line<br>
+# the following line prevents DenyHosts from blocking IP address 1.1.1.1<br>
+1.1.1.1<br>
+# The following lines prevent IP addresses 1.1.1.2 and 1.1.1.3 from being blocked<br>
+1.1.1.2<br>
+1.1.1.3<br>
+# <br>
+# The first 3 parts of the IP address must be provided (eg. 1.2.3.)<br>
+# The last part of the IP address can be a wildcard.<br>
+# The wildcard can be given with an asterisk -or- as a range.<br>
+# <br>
+# This line prevents all IP address in the 1.1.1 network from being blocked<br>
+# 1.1.1.* <br>
+# <br>
+# This line prevents IP addresses in the range 1.1.1.6 to 1.1.1.23 from being blocked<br>
+# 1.1.1.[6-23]<br>
+# the following line prevents DenyHosts from blocking the host foo<br>
+foo<br>
+</i>
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="hostname"></a>
+<a name="3_8"></a>
+<p align="right">A. 3.8</p><h2>What if SSH sometimes logs hostnames rather than IP addresses<br>
+How can I prevent these from being blocked?</h2><br>If your versions and configuration of sshd and tcp_wrappers sometimes/always log hostnames 
+rather than IP addresses then you can have DenyHosts attempt to resolve each IP address in the 
+<i>allowed-hosts</i> file in order to determine the corresponding hostname.  In doing so, any host
+that matches either this resolved IP address or the hostname will not be blocked.
+<p>
+To enable this feature, you must specify the following option in your configuration file:<p>
+
+<i>ALLOWED_HOSTS_HOSTNAME_LOOKUP=yes</i>
+<p>
+<b>Note:</b> Depending on the number of entries in your <i>allowed-hosts</i> file, this 
+operation can be network intensive but only at DenyHosts startup.  Therefor, It is recommended 
+that this option only be used when running DenyHosts in <a href="#daemon">daemon mode</a> since
+this initialization only occurs once.  Additionally, if hostnames never appear in your 
+<i>SECURE_LOG</i> then you shouldn't set this parameter at all (or set it to <i>no</i>):<p>
+
+<i>ALLOWED_HOSTS_HOSTNAME_LOOKUP=no</i>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="3_9"></a>
+<p align="right">A. 3.9</p><h2>DenyHosts reports suspicious login activity for allowed hosts, how can I stop this?
+</h2><br>In DenyHosts v0.6.0, a new configuration parameter <i>SUSPICIOUS_LOGIN_REPORT_ALLOWED_HOSTS</i> was 
+added to address this issue. You can refer to the included denyhosts.cfg-dist file 
+for more information.  
+<p>  
+This parameter can be set to <i>YES</i> or <i>NO</i>.  The default value is YES.  If you wish to 
+change 
+the default behavior and only report suspicious login activity from unknown ip addresses, set this 
+value to 
+NO.<p>
+
+Regardless of whether this value is YES or NO, if the suspicious login did not originate from 
+a known <a href=#allowed>allowed-hosts</a> the activity will always be reported.  That is, this 
+parameter only applies to ip addresses in your allowed-hosts file.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="gzip"></a>
+<a name="3_10"></a>
+<p align="right">A. 3.10</p><h2>Can DenyHosts process gzipped logfiles</h2><br>Yes.  DenyHosts v0.7.0+ will automatically detect whether a log supplied with the <i>-f</i> 
+parameter is gzipped (based on the <i>.gz</i> file suffix).  Some system configurations compress rotated logs using 
+gzip (eg. <i>/var/log/messages</i> when rotated can be named <i>/var/log/messages.1.gz</i>).  To process a gzipped 
+logfile simply provide the fullpath on the command line using the <i>-f</i> flag (just as if it were a non-gzipped 
+file): <p>
+
+$ <i>denyhosts.py -f /var/log/secure.log.1.gz</i><p>
+
+When DenyHosts encounters a gzipped logfile it will automatically open it (without uncompressing it on disk) and 
+process it.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="bzip"></a>
+<a name="3_11"></a>
+<p align="right">A. 3.11</p><h2>Can DenyHosts process bzipped (bz2) logfiles</h2><br>Yes.  DenyHosts v0.8.0+ will automatically detect whether a log supplied with the <i>-f</i> 
+parameter is bzipped (based on the <i>.bz2</i> file suffix).  Some system configurations compress rotated logs using 
+bzip2 (eg. <i>/var/log/messages</i> when rotated can be named <i>/var/log/messages.1.bz2</i>).  To process a bzipped 
+logfile simply provide the fullpath on the command line using the <i>-f</i> flag (just as if it were a non-bzipped 
+file): <p>
+
+$ <i>denyhosts.py -f /var/log/secure.log.1.bz2</i><p>
+
+When DenyHosts encounters a bzipped logfile it will automatically open it (without 
+uncompressing it on disk) and process it.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="migrate"></a>
+<a name="3_12"></a>
+<p align="right">A. 3.12</p><h2>I've just upgraded to 0.8.0 (or greater) and want to update 
+my <i>HOSTS_DENY</i> for use with <i>PURGE_DENY</i>
+</h2><br><b>Note:</b><br>
+You may wish to refer to <a href="#purge">setting the <i>PURGE_DENY</i> configuration parameter</a> for information 
+related to this entry.
+<p>
+To instruct DenyHosts to migrate your <i>HOSTS_DENY</i> for use with <i>PURGE_DENY</i> invoke DenyHosts with the 
+<i>--migrate</i> flag:<p>
+
+$ <i>denyhosts.py --migrate</i><p>
+
+<b>Note:</b><br>
+
+Using the <i>--migrate</i> flag without previously defining a value for the <i>PURGE_DENY</i> 
+parameter will result in an error condition such that DenyHosts will exit immediately.<p>
+
+When DenyHosts is run with the <i>--migrate</i> flag it locates entries in the 
+<i>HOSTS_DENY</i> file that have not been been previously timestamped by DenyHosts and 
+timestamps them (using the current time).  The following algorithm is used to update the 
+<i>HOSTS_DENY</i> file:<p>
+
+<ol>
+<li><i>HOSTS_DENY</i> is backed up to a file named <i>HOSTS_DENY.migrate.bak</i>
+<li>a temp file is created, <i>HOSTS_DENY.migrate.tmp</i>
+<li>the <i>HOSTS_DENY</i> is parsed and each entry that is commented or is a blank link will be written to 
+<i>HOSTS_DENY.migrate.tmp</i> as-is.
+<li>otherwise, each <i>HOSTS_DENY</i> entry will have a comment added in the form of <i> # DenyHosts: 
+timestamp</i> and then written to <i>HOSTS_DENY.migrate.tmp</i>
+<li>after all lines are parsed, <i>HOSTS_DENY.migrate.tmp</i> is moved to <i>HOSTS_DENY</i> (atomically-- such that 
+even in the case of failure, the <i>HOSTS_DENY</i> should always be present).  In the event of a catastrophic 
+emergency you can manually move the <i>HOSTS_DENY.migrate.bak</i> back to <i>HOSTS_DENY</i>.
+</ol>
+<p>  
+
+<b>Note:</b><br>
+
+If you have a manually added specific hosts to <i>HOSTS_DENY</i> (without the use of 
+DenyHosts, for instance) then you may wish to edit <i>HOSTS_DENY</i> and remove the timestamp 
+data that was appended to the line by the <i>--migrate</i> function.  You may also wish to do 
+this for any entry that you <i>never</i> want DenyHosts to remove.  Any timestamped entry 
+will automatically be removed by DenyHosts when it is invoked with the <i>--purge</i> flag 
+subject to the <i>PURGE_DENY</i> value.  Refer to the <a href="#purge">purge section</a> for 
+more details.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="3_13"></a>
+<p align="right">A. 3.13</p><h2>How can I prevent more than one instance of DenyHosts from running?</h2><br>DenyHosts v0.8.0 (and greater) uses the configuration parameter <i>LOCK_FILE</i> which should 
+point to some unique path.  When DenyHosts is run initially it will attempt to create this 
+file and record it's process id (pid).  If it already exists, DenyHosts will exit indicating 
+that DenyHosts is still running and the pid of the previous process.  Upon exit, DenyHosts 
+will delete the <i>LOCK_FILE</i> so that it will not interfere with other instances (such as 
+another instance run from cron).<p>
+
+In the event that something goes awry (or if you savagely killed the current DenyHosts 
+process before it had a chance to delete the <i>LOCK_FILE</i> itself) there is a chance that 
+the <i>LOCK_FILE</i> will not get deleted.  If this occurs, you can manually clear the 
+<i>LOCK_FILE</i> by invoking DenyHosts with the <i>--unlock</i> flag: <p>
+
+$ <i>denyhosts.py --unlock</i><p>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="email"></a>
+<a name="3_14"></a>
+<p align="right">A. 3.14</p><h2>Why does DenyHosts report  "Error sending email"?</h2><br>Depending on your particular email server you may see an error message such as:<p>
+
+<i>
+Error sending email<br>
+{'foo@localhost': (504, '<<i>DenyHosts></i>: Sender address rejected: need
+fully-qualified address')}</i><p>
+
+If you do receive this error message simply edit your configuration file and enter a fully 
+qualified email address for the <i>SMTP_FROM</i> parameter.  For instance:<p>
+
+<i>SMTP_FROM = DenyHosts <<i>nobody@yourdomain.com></i></i>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="smtp_auth"></a>
+<a name="3_15"></a>
+<p align="right">A. 3.15</p><h2>Can DenyHosts email reports to SMTP servers that require 
+authentication?</h2><br>Beginning with version 1.1.1, DenyHosts can email reports to SMTP servers that require
+username/password authentication.  If your SMTP server requires authentication you will 
+need to set the following parameters in your denyhosts.cfg file:<p>
+
+<ul>
+<li><i>SMTP_USERNAME</i> - your SMTP username.
+<li><I>SMTP_PASSWORD</i> - your SMTP password.
+</ul>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="daemon"></a>
+<a name="3_16"></a>
+<p align="right">A. 3.16</p><h2>Can DenyHosts be run as a daemon (background) process?</h2><br>DenyHosts v0.9.0 (and greater) introduces daemon support.  When launched with the <i>--daemon</i> flag, DenyHosts 
+will run in the background and constantly monitor your <i>SECURE_LOG</i> for new activity:<p>
+
+$ <i>denyhosts.py --daemon</i>
+
+<b>Note:</b><br>
+The following command line flags are ignored when <i>--daemon</i> is used: <i>--file, --verbose, --migrate, 
+--purge</i><p>
+
+<b>Note:</b><br>
+The daemon mode <b>must</b> be invoked as superuser (root)<p>
+
+There are 3 optional configuration settings specific to daemon mode.  You can refer to the included 
+<i>denhosts.cfg-dist</i> file for sample usage.  These new values are:<p>
+
+<ol>
+
+<li>DAEMON_LOG: specifices the path to which DenyHosts should record activity.  The default is 
+<i>/var/log/denyhosts</i>
+
+<li>DAEMON_SLEEP: the amount of <a href="#timespec">time</a> that DenyHosts will pause between checking
+for new activity in your <i>SECURE_LOG</i>.  The default is <i>30s</i>
+
+<li>DAEMON_PURGE: the amount of <a href="#timespec">time</a> that DenyHosts should attempt to 
+<a href="#purge">purge</a> historical entries from your <i>HOSTS_DENY</i> file.  If left blank, purging will be 
+disabled.  The default is <i>1h</i>
+
+</ol>
+
+<p>
+
+For your convenience there is a python script <i>daemon-control-dist</i> that is located in the DenyHosts 
+distribution.  You should copy this file to <i>daemon-control</i> and edit the 3 variables at the top to match your 
+environment.   If you wish you can place this in your <i>/etc/init.d</i> directory.  <p>
+
+You can then invoke this script to control the DenyHosts daemon:
+
+<ul>
+<li><i>daemon-control start</i> - stats DenyHosts in daemon mode
+
+<li><i>daemon-control stop</i> - cleanly stops the DenyHosts daemon
+
+<li><i>daemon-control restart</i> - stop and start the daemon
+
+<li><i>daemon-control debug</i> - Instructs the daemon to toggle between the debug and normal log output
+
+<li><i>daemon-control status</i> - display the state of the daemon
+
+</ul>
+
+The <i>start</i> and <i>restart</i> commands (as of v0.9.6) can also accept command line options.  For instance to 
+load an alternate configuration file, you can do the following:<p>
+
+$ <i>daemon-control start --config=test.cfg</i><p>
+
+To restart the above example in <i>debug</i> mode:<p>
+
+$ <i>daemon-control restart --config=test.cfg --debug</i><p>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="3_17"></a>
+<p align="right">A. 3.17</p><h2>I have additional questions, where can I get help?</h2><br>You can subscribe to the <a href="http://sourceforge.net/mail/?group_id=131204">DenyHosts Mailing List</a>
+
+<p>
+<i>or</i>
+<p>
+
+You can <a href="http://sourceforge.net/users/phil_schwartz/">contact me</a> directly.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="bug"></a>
+<a name="3_18"></a>
+<p align="right">A. 3.18</p><h2>I've found a bug, will you fix it?</h2><br>Bug?  That's <i>"unpossible"</i>.  <p>
+
+In the rare and highly unlikely event that you do find what <i>you think</i> might be considered a bug (even though it's
+really a <i>feature</i>) you can <a href="http://sourceforge.net/tracker/?group_id=131204&atid=720419">report it</a> 
+at Sourceforge.<p>
+
+
+When reporting a bug, please try to include the output from DenyHosts when invoking it with the <i>--debug</i> flag:<br>
+$ <i>denyhosts.py --debug</i><p>
+
+Alternatively, You can send the bug report to <a href="http://sourceforge.net/users/phil_schwartz/">my Sourceforge 
+email address</a>.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="work_dir"></a>
+<a name="3_19"></a>
+<p align="right">A. 3.19</p><h2>What are all of the files in my DenyHosts WORK_DIR?</h2><br>The WORK_DIR contains files that DenyHosts uses for keeping track of the hackers.  In addition
+to these files that DenyHosts creates and updates there are also some files that are intended
+as user editable files (those that which the DenyHosts user creates and edits as appropriate).
+<p>
+<b>User maintained files (they are optional)</b><p>
+
+<i>allowed-hosts</i> - contains a list of ip addresses that are exempt from being denied by DenyHosts.
+For further details refer to the <a href="#allowed">allowed hosts</a> FAQ entry.
+<p>
+
+<i>restricted-usernames</i> - contains a list of real or ficticious usernames that should never log into your sshd server.  
+Refer to <a href="#restricted">restricted usernames</a> for more information.
+
+<p>
+<b>DenyHosts maintained files</b><p>
+
+<i>offset</i> - DenyHosts stores the offset of the last position read from your  <i>SECURE_LOG</i> file.  DenyHosts uses
+this to quickly determine if new data is available in your logfile.  This file also stores the first line of your log file 
+such that DenyHosts can determine if the file has been rotated between scans.
+<p>
+
+<i>purge-history</i> - (new in 2.4) contains a list of the denied hosts that have been purged from your 
+<i>HOSTS_DENY</i> file.  Additionally, this file records the number of times this host has 
+been purged and the timestamp of the most recent purge.  This file is only created if 
+DenyHosts is operating in <a href="#purge">purge mode</a>.
+<p>
+
+<i>sync-received</i> - a list of the hosts that have been received from the DenyHosts Synchronization server.  Refer to <a href="#sync">sync mode</a> for more details.
+<p>
+
+<i>sync-timestamp</i> - the last time that synchronization has occurred.  Refer to 
+<a href="#sync">sync mode</a> for more details.
+<p>
+
+<i>hosts</i> - a list of all hosts that have attempted to access your sshd server.  In addition the file contains the number 
+of failed attempts and most recent attempt timestamp.
+<p>
+
+<i>hosts-restricted</i> - 
+a list of hosts that have attempted to access restricted username accounts on your server.  The 
+file has the same format as <i>hosts</i>.
+<p>
+
+<i>hosts-root</i> - a list of hosts that have attempted to access the root account on your server.  The 
+file has the same format as <i>hosts</i>.
+<p>
+
+<i>hosts-valid</i> - a list of hosts that have attempted to access valid username accounts on your server.  The 
+file has the same format as <i>hosts</i>.
+<p>
+
+<i>suspicious-logins</i> - a list of suspicious login activity (that is, logins that were successful after the deny threshold 
+should have been reached).
+<p>
+
+<i>users-hosts</i> - a list of usernames along with the ip address that attempted to login to your sshd server.  This file 
+also contains the number of attempts for the username/ip address along with the most recent timestamp.
+<p>
+
+<i>users-invalid</i> - a summary of non-existent usernames that were used in order to login to your server.  
+The file also 
+contains the number of attempts per usernames and the most recent timestamp.
+<p>
+
+<i>users-valid</i> - a summary of all existing usernames (including 'root') that attempts to login to your sshd server.
+The file also contains the number of attempts per usernames and the most recent timestamp.
+<p>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+ <h1>DenyHosts Synchronization Mode</h1>
+<a name="sync"></a>
+<a name="4_0"></a>
+<p align="right">A. 4.0</p><h2>What is synchronization mode?</h2><br>DenyHosts v2.0 and later introduces <i>synchronization mode</i> which allows DenyHosts daemons the
+ability to transmit denied host data to a central remote server (hosted by denyhosts.net).
+Additionally, DenyHosts daemons can also receive data that other DenyHosts daemons have sent to
+the central server.  
+<p>
+This feature is intended to provide the ability to proactively deny ip addresses that have attacked 
+other users of DenyHosts.  That is, each DenyHosts 2.0 (or later) user can benefit from other
+users of Denyhosts.  Similarly each DenyHosts user can benefit other DenyHosts users.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="4_1"></a>
+<p align="right">A. 4.1</p><h2>What is denyhosts.net?</h2><br><a href="http://www.denyhosts.net">www.denyhosts.net</a> is the new home of DenyHosts operated
+by the creator of DenyHosts.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="4_2"></a>
+<p align="right">A. 4.2</p><h2>How does synchronization mode work?</h2><br>DenyHosts daemons periodically connect (based on the configuration file parameter 
+<i>SYNC_INTERVAL</i>) to the denyhosts.net remote server.  
+If hosts have been denied by this daemon then they will
+automatically be transmitted to denyhosts.net.  If new hosts have been denied by others (that is,
+other users running DenyHosts in synchronization mode), then they will be added to your 
+<i>HOSTS_DENY</i><pre>  </pre>file automatically (based on your 
+<i><a href="#sync_download_threshold">SYNC_DOWNLOAD_THRESHOLD</a></i> setting).  
+This allows your DenyHosts daemon to proactively deny hosts that have not
+yet attacked you.
+<p>
+
+Each time that your DenyHosts daemon connects to the denyhosts.net server, only the data that
+has changed since the last data synchronization is transmited.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="4_3"></a>
+<p align="right">A. 4.3</p><h2>What are the requirements for synchronization mode?</h2><br>To use DenyHosts in synchronization mode, you must be using DenyHosts 2.0 or later.
+Additionally, DenyHosts must be running in <a href="#daemon">daemon mode</a> 
+(such that it will periodically synchronize with the denyhosts.net server).
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="sync_default"></a>
+<a name="4_4"></a>
+<p align="right">A. 4.4</p><h2>Is synchronization mode enabled by default?</h2><br>No.  To enable DenyHosts in synchronization mode you must explicitly enable it.
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="sync_enable"></a>
+<a name="4_5"></a>
+<p align="right">A. 4.5</p><h2>How do I enable synchronization mode?</h2><br>You must add or modify several parameters in your DenyHosts configuration file 
+(typically, <i>denyhosts.cfg</i>).  
+<p>
+
+<b>Note:</b> If you are upgrading  DenyHosts to 2.0 (or later) from v1.x 
+then you will need to add several parameters to the configuration file.  The 
+<i>denyhosts.cfg-dist</i> file contains several new parameters for synchronization mode.  
+These parameters should be manually copied to your DenyHosts configuration file.
+<p>
+
+The parameters pertaining to synchronization mode support are prefixed with <i>SYNC_</i>.  
+They are: <p>
+
+<i>
+<ul>
+<li><b>SYNC_SERVER</b> - required
+<li>SYNC_INTERVAL
+<li>SYNC_UPLOAD
+<li>SYNC_DOWNLOAD
+<li>SYNC_DOWNLOAD_THRESHOLD
+<li>SYNC_DOWNLOAD_RESILIENCY - (version 2.1 or later)
+</ul>
+</i>
+
+To enable synchronization mode <i>SYNC_SERVER</i> must be defined.  Currently, the corresponding
+value must be set to <i>http://xmlrpc.denyhosts.net:9911</i>
+<p>
+
+If the <i>SYNC_SERVER</i> parameter is not defined then synchronization mode will be disabled.  <p>
+
+<b>Note:</b> by default synchronization mode is disabled.  To enable it (recommended) you 
+<i>must</i> add the following to your configuration file:<p>
+
+<i>SYNC_SERVER = http://xmlrpc.denyhosts.net:9911</i>
+<p>
+
+The other synchronization mode parameters are optional.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="4_6"></a>
+<p align="right">A. 4.6</p><h2>How do I configure synchronization mode?</h2><br>Assuming you have edited your configuration file to 
+<a href="#sync_enable">enable synchronization mode</a> you can tweak the behavior of DenyHosts
+synchronization mode by specifying appropriate values for the optional configuration parameters.
+These parameters have no effect if synchronization mode is disabled (which is the default).
+<p>
+
+<i>SYNC_INTERVAL</i> - Specifies the length of time between synchronization attempts.  
+By default, this value is 1 hour.  The minimum allowed value is 5 minutes.  If your DenyHosts
+daemon has not recorded any additional rogue hosts since the previous synchronization then 
+no data will be uploaded to denyhosts.net.  If no new DenyHosts (that meet your 
+<i>SYNC_DOWNLOAD_THRESHOLD</i> and <i>>SYNC_DOWNLOAD_RESILIENCY</i> settings) are available 
+from the denyhosts.net server, then no hosts will be downloaded by your daemon.
+<P>
+
+<i>SYNC_UPLOAD</i> - Allow your DenyHosts daemon the ability to upload data.  The default is "yes".
+<p>
+
+<i>SYNC_DOWNLOAD</i> - Allow your DenyHosts daemon the ability to transmit data.  The default is "yes".
+<p>
+
+<i><a href="#sync_download_threshold">SYNC_DOWNLOAD_THRESHOLD</a></i> - Only download recently 
+denied hosts that have been blocked by this number of other DenyHosts daemons. 
+<p>
+
+<i><a href="#sync_download_resiliency">SYNC_DOWNLOAD_RESILIENCY</a></i> - Only download ip addresses 
+that have been attacking other servers for atleast this length of time.  
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="4_7"></a>
+<p align="right">A. 4.7</p><h2>Can I just send denied data?</h2><br>If you wish to only provide data (of the hosts that your DenyHosts daemon has blocked) 
+to the denyhosts.net server but not receive hosts that have been denied by others you can set
+your <i>SYNC_DOWNLOAD</i> to <i>no</i>.  The default is <i>yes</i> but only applies if
+synchronization mode has been enabled.
+<p>
+
+<i>SYNC_DOWNLOAD = no</i>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="4_8"></a>
+<p align="right">A. 4.8</p><h2>Can I just receive data?</h2><br>If you wish to only receive data (that other DenyHosts daemons have thwarted) but
+not provide any data (that your DenyHosts daemon has blocked) to denyhosts.net then
+you can do so by setting your <i>SYNC_UPLOAD</i> to <i>no</i>. 
+The default is <i>yes</i> but only applies if synchronization mode has been enabled.
+<p>
+
+<i>SYNC_UPLOAD = no</i>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="4_9"></a>
+<p align="right">A. 4.9</p><h2>When receiving denied data will I get all denied hosts?</h2><br>When your DenyHosts daemon initially connects with the denyhosts.net server it will
+download the most recent attacks that have been reported by other DenyHosts daemons.
+
+<p>
+
+Subsequently, subject to your <i>SYNC_INTERVAL</i> setting, when your DenyHosts daemon
+connects with the denyhosts.net server only the data that has changed since it's last 
+connection will be transmitted.  That is, if there are a total of 1000 denied hosts in the
+system but only 5 have been added (or re-added) since the last synchronization, then only
+the 5 will be transmitted to your DenyHosts daemon.
+<p>
+
+<a name="sync_download_threshold"></a>
+
+Additionally, you can set your <i>SYNC_DOWNLOAD_THRESHOLD</i> to qualify the data being
+transmitted such that you have more confidence in it.  That is, each time a host is added
+to the denyhosts.net server a counter is incremented for that ip address.  If 
+your <i>SYNC_DOWNLOAD_THRESHOLD = 1</i> and the counter for an ip address is 1 (that is, a single
+DenyHosts daemon transmitted this address) then your DenyHosts daemon would download it.  However,
+if your <i>SYNC_DOWNLOAD_THRESHOLD = 4</i> then your DenyHosts daemon would not download this
+ip address until 3 other DenyHosts clients transmitted the data.<p>
+
+<a name="sync_download_resiliency"></a>
+
+DenyHosts 2.1 adds the <i>SYNC_DOWNLOAD_RESILIENCY</i> setting.  Resiliency is defined as the 
+timespan between a hackers first known attack and it's most recent attack.   This value is used in 
+conjunction with the <i>SYNC_DOWNLOAD_THRESHOLD</i> value and only hosts that satisfy both 
+values will be downloaded.   This value has no effect if <i>SYNC_DOWNLOAD_THRESHOLD = 1</i>.
+
+<p>
+Example:
+<p>
+
+If the centralized denyhosts.net server records an attack from an ip address at 12 PM
+and then again at 2 PM, the resiliency of the offending ip address is 2 hours.
+Specifying a <i>SYNC_DOWNLOAD_RESILIENCY = 4h</i> (4 hours) will not download this ip address.
+However, if the attacker is recorded again at 5 PM then the ip address will be downloaded 
+by your DenyHosts instance since the ip address has been resilient for 5 hours (12 PM until 5 PM).
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="4_10"></a>
+<p align="right">A. 4.10</p><h2>How do I know that DenyHosts synchronization mode is working?</h2><br>Check your <i>DAEMON_LOG</i> file (typically /var/log/denyhosts).  You will see entries 
+similar to the following:
+
+<pre>
+
+Feb 04 07:42:51 - sync        : INFO     received 0 new hosts
+Feb 04 07:52:52 - sync        : INFO     sent 1 new host
+Feb 04 07:52:52 - sync        : INFO     received 0 new hosts
+Feb 04 08:02:52 - sync        : INFO     received 1 new host
+
+</pre>
+
+If you see errors, such as "connection refused" that would indicate that the centralize denyhosts.net
+server is down (perhaps for maintenance).  Once the server is restarted, any ip addresses that
+your DenyHosts daemon has recorded since the last successful synchronization will be sent (if
+your <i>SYNC_UPLOAD</i> is not set to "no").  
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="sync_disable"></a>
+<a name="4_11"></a>
+<p align="right">A. 4.11</p><h2>I decided that I don't want to use synchronization mode, how do I disable it?</h2><br>In the unlikely event that you don't find synchronization mode useful you can easily disable it
+by commenting out the <i>SYNC_SERVER</i> line in your configuration file.  You will then need to
+restart the DenyHosts daemon for the setting to take effect.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="4_12"></a>
+<p align="right">A. 4.12</p><h2>How long will retrieved ip addresses remain in my HOSTS_DENY file?</h2><br>Addresses obtained by your DenyHosts daemon via synchronization download will be
+subject to <a href="#purge">purging based on your <i>PURGE_DENY</i></a> 
+configuration setting.  It is therefor suggested that you set a reasonable 
+<i>PURGE_DENY</i> value to keep your <i>HOSTS_DENY</i> file from growing 
+excessively large. 
+<p>
+
+If the optional <i>PURGE_THRESHOLD</i> (new in v2.4) value is defined and not 0 (zero) then
+a host will be purged atmost this many times.  That is, if this value is set to 3, then DenyHosts
+will purge a host atmost 3 times.  After the host has been purged 3 times the host will remain in
+your <i>HOSTS_DENY</i> forever, effectively blocking it forever (unless you change this setting).  
+If this value is set to 0 (the default) then DenyHosts will purge each host indefinitely 
+(that is, each host can be added and purged repeatedly without being blocked permanently).
+<p>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="cost"></a>
+<a name="4_13"></a>
+<p align="right">A. 4.13</p><h2>What is the cost of the synchronization service?</h2><br>Currently there are no plans to charge for this service and I encourage anybody that
+finds this feature (and DenyHosts in general) useful to <a href="#donate">donate</a>.  
+I am using my personal resources (servers, bandwith, etc) to provide this service to
+the growing DenyHosts community.  By using my own resources, there may come a time 
+when I am forced to charge for this service, however, it would almost certainly remain 
+free to individual users.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="privacy1"></a>
+<a name="4_14"></a>
+<p align="right">A. 4.14</p><h2>What information is collected from me?</h2><br>When your DenyHosts daemon connects with the denyhosts.net server
+your ip address is transmitted (the same is true when you use your web browser to access
+any internet site).  Your ip address will never be shared and may be used
+internally to track suspicious activity.  Your ip address is also used to q
+ualify the uniqueness of the denied hosts that are maintained by the 
+denyhosts.net server <p>
+
+If you enable synchronization uploads, then, in addition to your ip address
+being sent, all recently denied ip addresses that your DenyHosts daemon has 
+thwarted will be transmitted.  This is of course the desired behavior and provides
+all DenyHosts daemons (that have synchronization download enabled) the ability
+to proactively block rogue hosts. 
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="privacy2"></a>
+<a name="4_15"></a>
+<p align="right">A. 4.15</p><h2>How will information collected from me be used?</h2><br>Although denyhosts.net may use your ip address for monitoring suspicious
+behavior this information will never be transmitted to other DenyHosts daemon 
+clients or provided to any 3rd parties.  That is, your ip address will not
+be shared.<p>
+
+The hosts that your DenyHosts daemon denies will of course be shared with
+other DenyHosts daemons.  Additionally, this data may be shared with 
+3rd parties at the discretion of the creator of DenyHosts.
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="aup"></a>
+<a name="4_16"></a>
+<p align="right">A. 4.16</p><h2>What is the acceptable use policy of the data that denyhosts.net provides?</h2><br>The ip addresses that are downloaded from the denyhosts.net server (for instance, by DenyHosts 
+daemons that have synchronization download enabled) may not be used for any commercial 
+purpose nor can this data be shared with the intent of profiting from it.  That is, if anybody is going 
+to make money from the data collected it should be me!  
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+<a name="license"></a>
+<a name="4_17"></a>
+<p align="right">A. 4.17</p><h2>I administer many commercial servers, can I run my own denyhosts.net server?</h2><br>You may wish to run your own (aka local) denyhosts.net server to synchronize all 
+DenyHosts daemons within your organization-- that is, if one server is attacked then 
+the other servers on your network will automatically be protected from the attacker 
+(based on their individual <i>SYNC_INTERVAL</i> settings).  The information collected 
+by the local denyhosts.net server can be used by your organization for any legal purposes 
+and would not be shared with other DenyHosts daemons (those that are not part of your network).
+<p>
+
+Currently, the server that denyhosts.net uses to interact with DenyHosts daemons is not
+publicly available.  You may  <a href="http://sourceforge.net/users/phil_schwartz/">contact me</a>
+if you would like to license the server component. <p>
+
+
+<a href="#top"><p align="right">Return to top</p></a>
+<hr>
+</td></tr></table></body></html>
+
+<p>
+<fieldset>
+<font size=-3>
+<center>
+<a href="index.html">Home</a> | 
+<a href="faq.html">FAQ</a> |
+<a href="links.html">Links</a> |
+<a href="features.html">Features</a> |
+<a href="http://sourceforge.net/project/showfiles.php?group_id=131204">Download</a> |
+<a href="http://sourceforge.net/projects/denyhosts/">SourceForge</a>
+</font>
+</center>
+</fieldset>
+</td>
+</tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,11 @@
+= denyhosts =
+
+This is an extracted, updated version of the denyhosts debian package on the precise main universe. It has been updated with [[http://sourceforge.net/p/denyhosts/bugs|bugfixes]] and [[http://sourceforge.net/p/denyhosts/patches/|patches]] from [[http://sourceforge.net/projects/denyhosts/|Phil Schwartz' Sourceforge Project]] that are absent in the precise main universe package.
+
+==Installation==
+
+{{{
+git clone https://github.com/MikeRixWolfe/denyhosts.git denyhosts/
+dpkg-deb -b denyhosts/ denyhosts.deb
+dpkg -i denyhosts.deb
+}}}

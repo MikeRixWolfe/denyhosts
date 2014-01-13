@@ -1,0 +1,63 @@
+dh_reenable script
+==================
+
+Debian version of denyhosts come with a script, stored in 
+
+/usr/share/denyhosts/DenyHosts/dh_reenable
+
+that aim to be a support for sysadmin thats has to easly re-enable
+some hosts that are blocked by denyhosts.
+
+/usr/share/denyhosts/DenyHosts/dh_reenable --help 
+
+give a short guide for usage.
+
+
+Foreground Mode (thanks to Robert Edmonds)
+==========================================
+
+Debian version of denyhosts has a --foreground switch that is not present
+in the standard version.
+It can be used for debugging tasks.
+
+
+Bastille compatibility (thanks to Jesse Norell)
+===============================================
+
+The default mode of operation for denyhosts (ie. adding lines to
+/etc/hosts.deny) is incompatible with the tcpwrappers configuration that
+bastille sets up for you. Bastille puts a default deny at the end of
+hosts.allow, so hosts.deny is never consulted. 
+
+A simple solution for me was to set:
+
+	HOSTS_DENY = /etc/denyhosts.blocked
+	BLOCK_SERVICE =
+
+Then in my hosts.allow where I previously had:
+
+	sshd : <trusted network>/24 : allow
+
+	# Bastille: default deny
+	# no safe_finger for in.fingerd (prevent loops)
+	in.fingerd : ALL : DENY
+	# but everything else is denied & reported with safe_finger
+	ALL : ALL : spawn (/usr/sbin/safe_finger -l @%h | /bin/mail -s "Port Denial noted %d-%h" root) & : DENY
+
+I changed to:
+
+	sshd : /etc/denyhosts.blocked : deny
+	sshd : 192.168.10.0/24 : allow
+	...etc...
+
+Migrate function warning
+========================
+
+When --migrate is used for migrate a previus denyhostized hosts.deny
+file for work whit purging system, it migrate ALL your entries and this
+maybe a possible security hole in your system.
+
+The right way to preserve some entries from purging, is to edit your 
+HOSTS_DENY file and comment these entries. Now you can execute --migrate 
+switch on your file. Re-edit the HOSTS_DENY file and de-comment the entries.
+
